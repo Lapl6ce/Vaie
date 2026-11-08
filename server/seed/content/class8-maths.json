@@ -1,0 +1,120 @@
+{
+  "class": 8,
+  "subject": "Mathematics",
+  "chapters": [
+    {
+      "id": "c8-math-lineq",
+      "title": "Linear Equations in One Variable",
+      "units": [
+        {
+          "id": "c8-math-lineq-1",
+          "title": "What is an equation?",
+          "icon": "scale-balance",
+          "key_idea": "An equation is like a balanced weighing scale: both sides are equal, and x stands for the unknown.",
+          "body": "Think of the shopkeeper's weighing scale (taraazu). When both pans have the same weight, the scale is balanced.\n\nAn equation is a balanced scale written with numbers. For example:\n\nx + 5 = 12\n\nThe left side (x + 5) must equal the right side (12). The letter x is a variable. It stands for a number we don't know yet.\n\nA linear equation in one variable has only one unknown, and the unknown is not squared or multiplied by itself. So 2x + 3 = 11 is linear, but x² = 9 is not.\n\nThe solution is the value of x that makes both sides equal. For x + 5 = 12, try x = 7: 7 + 5 = 12. Yes! So x = 7 is the solution.\n\nTo check any answer, put it back into the equation. If the two sides match, the answer is correct. If the scale tips, try again.",
+          "questions": [
+            ["An equation is most like a:", ["Balanced weighing scale", "Running river", "Locked box", "Empty bucket"], 0, "Both sides of an equation are equal, like a balanced scale."],
+            ["What is the solution of x + 5 = 12?", ["7", "17", "5", "12"], 0, "7 + 5 = 12."],
+            ["Which is a linear equation in one variable?", ["2x + 3 = 11", "x² = 9", "x + y = 4", "xy = 2"], 0, "It has one variable with power 1."],
+            ["In 3x = 15, x is called a:", ["Variable", "Constant", "Sign", "Fraction"], 0, "x stands for an unknown value."],
+            ["Is x = 4 a solution of 2x + 1 = 9?", ["Yes", "No", "Only sometimes", "Cannot check"], 0, "2(4) + 1 = 9."],
+            ["How do you check an answer?", ["Put it back into the equation", "Ask a friend", "Guess again", "Erase the equation"], 0, "Substituting shows if both sides match."],
+            ["What is the solution of x − 3 = 10?", ["13", "7", "30", "3"], 0, "13 − 3 = 10."],
+            ["Why is x² = 9 NOT linear?", ["The variable is squared", "It has an equals sign", "It uses 9", "It has no variable"], 0, "Linear equations have the variable only to the power 1."]
+          ]
+        },
+        {
+          "id": "c8-math-lineq-2",
+          "title": "Solving equations step by step",
+          "icon": "stairs",
+          "key_idea": "Whatever you do to one side, do the same to the other side, until x is alone.",
+          "body": "To solve an equation, we get x alone on one side. The golden rule: whatever you do to one side, do the same to the other, so the scale stays balanced.\n\nExample 1: x + 8 = 20\nTake away 8 from both sides: x = 20 − 8 = 12.\n\nExample 2: 4x = 28\nDivide both sides by 4: x = 7.\n\nExample 3: 3x + 5 = 26\nStep 1: Subtract 5 from both sides: 3x = 21.\nStep 2: Divide both sides by 3: x = 7.\nCheck: 3(7) + 5 = 26. Correct!\n\nA shortcut called transposing: when a number moves to the other side, its sign changes. + becomes −, and × becomes ÷.\n\nExample 4 (x on both sides): 5x − 4 = 2x + 8\nMove 2x to the left: 5x − 2x − 4 = 8, so 3x − 4 = 8.\nMove −4 to the right: 3x = 12, so x = 4.\n\nAlways check by putting your answer back.",
+          "questions": [
+            ["Solve: x + 8 = 20", ["12", "28", "8", "20"], 0, "Subtract 8 from both sides: x = 12."],
+            ["Solve: 4x = 28", ["7", "24", "32", "112"], 0, "Divide both sides by 4."],
+            ["Solve: 3x + 5 = 26", ["7", "10", "21", "31"], 0, "3x = 21, so x = 7."],
+            ["When a number is transposed to the other side, its sign:", ["Changes", "Stays the same", "Disappears", "Doubles"], 0, "+ becomes − and × becomes ÷."],
+            ["Solve: 5x − 4 = 2x + 8", ["4", "2", "12", "6"], 0, "3x = 12, so x = 4."],
+            ["Solve: x/2 = 9", ["18", "4.5", "11", "7"], 0, "Multiply both sides by 2."],
+            ["The golden rule of solving equations is:", ["Do the same thing to both sides", "Change only the right side", "Always add 10", "Remove the equals sign"], 0, "This keeps the equation balanced."],
+            ["Solve: 2x − 6 = 10", ["8", "2", "16", "4"], 0, "2x = 16, so x = 8."]
+          ]
+        },
+        {
+          "id": "c8-math-lineq-3",
+          "title": "Word problems with equations",
+          "icon": "text-box-outline",
+          "key_idea": "Read carefully, let x be the unknown, write the equation from the story, solve and check.",
+          "body": "Equations help solve everyday puzzles.\n\nProblem 1: Raju's father is 3 times as old as Raju. Together their ages add up to 48. How old is Raju?\nLet Raju's age be x. Father's age is 3x.\nx + 3x = 48 → 4x = 48 → x = 12.\nRaju is 12 and his father is 36. Check: 12 + 36 = 48. ✓\n\nProblem 2: A farmer sells some kilos of tomatoes at ₹20 per kg and gets ₹360. How many kilos?\nLet the kilos be x. 20x = 360 → x = 18 kg.\n\nProblem 3: The sum of two consecutive numbers is 41. Find them.\nLet the first be x; the next is x + 1.\nx + x + 1 = 41 → 2x = 40 → x = 20. The numbers are 20 and 21.\n\nSteps:\n1. Read the problem twice.\n2. Choose x for the unknown. Write what it means.\n3. Write other amounts using x.\n4. Form the equation and solve.\n5. Check the answer in the story.",
+          "questions": [
+            ["Father is 3 times Raju's age; together 48 years. Raju's age?", ["12", "16", "36", "24"], 0, "x + 3x = 48 → x = 12."],
+            ["Tomatoes at ₹20/kg earn ₹360. How many kg were sold?", ["18 kg", "20 kg", "15 kg", "340 kg"], 0, "20x = 360 → x = 18."],
+            ["Two consecutive numbers add to 41. The smaller one is:", ["20", "21", "19", "41"], 0, "x + (x + 1) = 41 → x = 20."],
+            ["If x is a number, 'five more than x' is written as:", ["x + 5", "5x", "x − 5", "x/5"], 0, "'More than' means add."],
+            ["A pen costs ₹x. 6 pens cost ₹90. x =", ["15", "84", "96", "540"], 0, "6x = 90 → x = 15."],
+            ["The first step in solving a word problem is:", ["Read it carefully and choose x for the unknown", "Write any answer", "Draw a graph", "Skip it"], 0, "Understanding and naming the unknown comes first."],
+            ["A rope 30 m long is cut into two pieces; one is 6 m longer. The shorter piece is:", ["12 m", "18 m", "15 m", "6 m"], 0, "x + (x + 6) = 30 → x = 12."],
+            ["'Twice a number minus 4 is 10.' The number is:", ["7", "3", "14", "6"], 0, "2x − 4 = 10 → x = 7."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8-math-compare",
+      "title": "Comparing Quantities",
+      "units": [
+        {
+          "id": "c8-math-compare-1",
+          "title": "Ratios and percentages",
+          "icon": "percent",
+          "key_idea": "Percent means 'out of 100'; to find x% of a number, multiply the number by x/100.",
+          "body": "A ratio compares two amounts of the same kind. If a class has 12 girls and 18 boys, the ratio of girls to boys is 12 : 18, which simplifies to 2 : 3.\n\nPercent means \"out of 100\". The sign is %. 25% means 25 out of every 100.\n\nTo turn a fraction into a percent, multiply by 100.\n• 1/2 = 50%\n• 1/4 = 25%\n• 3/4 = 75%\n\nTo find a percent of a number, multiply the number by the percent and divide by 100.\nExample: 20% of 250 = 250 × 20 ÷ 100 = 50.\n\nPercent increase and decrease: last year a farmer harvested 40 quintals of wheat. This year it is 50 quintals. The increase is 10 quintals.\nPercent increase = (increase ÷ original) × 100 = (10 ÷ 40) × 100 = 25%.\n\nPercentages make comparisons fair. If Asha scores 45 out of 50 and Vijay scores 80 out of 100, Asha got 90% and Vijay got 80%. So Asha did better, even though her number looks smaller.",
+          "questions": [
+            ["Percent means:", ["Out of 100", "Out of 10", "Out of 1000", "Divided by 2"], 0, "Per cent = per hundred."],
+            ["What is 20% of 250?", ["50", "25", "200", "5"], 0, "250 × 20 ÷ 100 = 50."],
+            ["3/4 as a percent is:", ["75%", "34%", "25%", "43%"], 0, "3/4 × 100 = 75%."],
+            ["12 girls and 18 boys. The ratio of girls to boys in simplest form is:", ["2 : 3", "3 : 2", "12 : 30", "1 : 2"], 0, "Divide both by 6: 2 : 3."],
+            ["A harvest grows from 40 to 50 quintals. The percent increase is:", ["25%", "10%", "20%", "50%"], 0, "(10 ÷ 40) × 100 = 25%."],
+            ["Asha: 45/50. Vijay: 80/100. Who did better?", ["Asha (90%)", "Vijay (80%)", "Both equal", "Cannot tell"], 0, "45/50 = 90%, which is more than 80%."],
+            ["1/2 as a percent is:", ["50%", "12%", "20%", "2%"], 0, "1/2 × 100 = 50%."],
+            ["10% of ₹600 is:", ["₹60", "₹6", "₹600", "₹10"], 0, "600 × 10 ÷ 100 = 60."]
+          ]
+        },
+        {
+          "id": "c8-math-compare-2",
+          "title": "Profit, loss and discount",
+          "icon": "storefront-outline",
+          "key_idea": "Profit = Selling price − Cost price; Loss = Cost price − Selling price; discount is a reduction on the marked price.",
+          "body": "A vegetable seller buys onions from the mandi for ₹500. This is the cost price (CP). He sells them in the village for ₹600. This is the selling price (SP).\n\nIf SP is more than CP, there is a profit:\nProfit = SP − CP = 600 − 500 = ₹100.\nProfit % = (Profit ÷ CP) × 100 = (100 ÷ 500) × 100 = 20%.\n\nIf SP is less than CP, there is a loss:\nLoss = CP − SP.\nIf some onions rot and he gets only ₹450, Loss = 500 − 450 = ₹50, and Loss % = (50 ÷ 500) × 100 = 10%.\n\nRemember: profit and loss percent are always calculated on the cost price.\n\nDiscount: shops often write a marked price (MP) on an item and then reduce it. The reduction is the discount.\nA shirt marked ₹400 with a 10% discount:\nDiscount = 10% of 400 = ₹40.\nSale price = 400 − 40 = ₹360.\n\nKnowing this helps you check if a \"big sale\" is really a good deal.",
+          "questions": [
+            ["CP = ₹500, SP = ₹600. The profit is:", ["₹100", "₹1100", "₹500", "₹600"], 0, "Profit = SP − CP = 100."],
+            ["Profit % on CP ₹500 with profit ₹100 is:", ["20%", "10%", "16.7%", "100%"], 0, "(100 ÷ 500) × 100 = 20%."],
+            ["When SP is less than CP, there is a:", ["Loss", "Profit", "Discount", "Tax"], 0, "Selling for less than you paid means a loss."],
+            ["CP = ₹500, SP = ₹450. Loss % is:", ["10%", "50%", "5%", "11%"], 0, "(50 ÷ 500) × 100 = 10%."],
+            ["Profit % and loss % are calculated on the:", ["Cost price", "Selling price", "Marked price", "Discount"], 0, "Always divide by the CP."],
+            ["A shirt marked ₹400 has a 10% discount. Sale price?", ["₹360", "₹390", "₹40", "₹440"], 0, "400 − 40 = 360."],
+            ["Discount is given on the:", ["Marked price", "Cost price", "Profit", "Loss"], 0, "The discount reduces the marked price."],
+            ["Bought for ₹200, sold for ₹250. Profit % is:", ["25%", "50%", "20%", "5%"], 0, "Profit 50; (50 ÷ 200) × 100 = 25%."]
+          ]
+        },
+        {
+          "id": "c8-math-compare-3",
+          "title": "Simple interest",
+          "icon": "bank-outline",
+          "key_idea": "Simple Interest = (Principal × Rate × Time) ÷ 100.",
+          "body": "When you keep money in a bank or post office, the bank pays you extra money for keeping it. When you borrow money, you pay extra. This extra money is called interest.\n\nThree words to know:\n1. Principal (P): the money you deposit or borrow.\n2. Rate (R): the percent of interest per year.\n3. Time (T): the number of years.\n\nSimple Interest (SI) = (P × R × T) ÷ 100\n\nExample: You save ₹2,000 at 5% per year for 3 years.\nSI = (2000 × 5 × 3) ÷ 100 = ₹300.\nThe total you get back, called the amount, is:\nAmount = Principal + Interest = 2000 + 300 = ₹2,300.\n\nIf you borrow, the same formula shows how much extra you must pay back. A higher rate or longer time means much more interest. That is why it is important to compare rates and read the terms carefully before taking any loan. For real money decisions, always ask your bank branch or post office.",
+          "questions": [
+            ["The formula for simple interest is:", ["(P × R × T) ÷ 100", "P + R + T", "P × R × T", "(P + R) × T"], 0, "SI = PRT/100."],
+            ["₹2,000 at 5% for 3 years gives SI of:", ["₹300", "₹30", "₹3,000", "₹600"], 0, "(2000 × 5 × 3) ÷ 100 = 300."],
+            ["Amount equals:", ["Principal + Interest", "Principal − Interest", "Interest only", "Rate × Time"], 0, "The total you get back is principal plus interest."],
+            ["The money you deposit or borrow is called the:", ["Principal", "Rate", "Interest", "Time"], 0, "Principal is the starting money."],
+            ["₹1,000 at 10% per year for 2 years. SI =", ["₹200", "₹100", "₹20", "₹1,200"], 0, "(1000 × 10 × 2) ÷ 100 = 200."],
+            ["If the rate goes up and other things stay the same, interest:", ["Increases", "Decreases", "Stays the same", "Becomes zero"], 0, "Interest grows with the rate."],
+            ["₹500 at 4% for 5 years. The amount is:", ["₹600", "₹100", "₹520", "₹504"], 0, "SI = 100, so amount = 600."],
+            ["In SI, 'R' stands for:", ["Rate of interest per year", "Rupees", "Remainder", "Return"], 0, "R is the yearly interest rate in percent."]
+          ]
+        }
+      ]
+    }
+  ]
+}

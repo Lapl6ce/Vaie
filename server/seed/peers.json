@@ -1,0 +1,17 @@
+[
+  { "id": "demo-aarav", "name": "Aarav", "avatar": "🐯", "class": 9, "village": "Rampur" },
+  { "id": "demo-priya", "name": "Priya", "avatar": "🦚", "class": 9, "village": "Rampur" },
+  { "id": "demo-kabir", "name": "Kabir", "avatar": "🐘", "class": 9, "village": "Rampur" },
+  { "id": "demo-ananya", "name": "Ananya", "avatar": "🦋", "class": 9, "village": "Sonpur" },
+  { "id": "demo-rohit", "name": "Rohit", "avatar": "🐂", "class": 9, "village": "Rampur" },
+  { "id": "demo-meena", "name": "Meena", "avatar": "🌻", "class": 9, "village": "Sonpur" },
+  { "id": "demo-arjun", "name": "Arjun", "avatar": "🦁", "class": 10, "village": "Rampur" },
+  { "id": "demo-lakshmi", "name": "Lakshmi", "avatar": "🐄", "class": 10, "village": "Rampur" },
+  { "id": "demo-imran", "name": "Imran", "avatar": "🦅", "class": 10, "village": "Sonpur" },
+  { "id": "demo-kavya", "name": "Kavya", "avatar": "🐢", "class": 8, "village": "Rampur" },
+  { "id": "demo-sahil", "name": "Sahil", "avatar": "🐐", "class": 8, "village": "Rampur" },
+  { "id": "demo-divya", "name": "Divya", "avatar": "🌸", "class": 8, "village": "Sonpur" },
+  { "id": "demo-gurpreet", "name": "Gurpreet", "avatar": "🦜", "class": 9, "village": "Rampur" },
+  { "id": "demo-selvi", "name": "Selvi", "avatar": "🐟", "class": 10, "village": "Sonpur" },
+  { "id": "demo-tanmay", "name": "Tanmay", "avatar": "🐒", "class": 8, "village": "Rampur" }
+]

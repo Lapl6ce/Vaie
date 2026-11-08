@@ -1,0 +1,120 @@
+{
+  "class": 10,
+  "subject": "Mathematics",
+  "chapters": [
+    {
+      "id": "c10-math-ap",
+      "title": "Arithmetic Progressions",
+      "units": [
+        {
+          "id": "c10-math-ap-1",
+          "title": "What is an AP?",
+          "icon": "stairs-up",
+          "key_idea": "An arithmetic progression is a list of numbers where you add the same number (the common difference d) each time.",
+          "body": "Priya saves ₹50 in the first week, ₹60 in the second, ₹70 in the third, and so on. Her savings each week form the list:\n50, 60, 70, 80, ...\n\nEach number is 10 more than the one before. A list like this, where we add the same fixed number every time, is called an arithmetic progression (AP).\n\n• The first term is called a. Here a = 50.\n• The fixed number added each time is the common difference d. Here d = 10.\n\nTo find d, subtract any term from the next one: d = 60 − 50 = 10.\n\nd can be:\n• positive: 3, 7, 11, 15 ... (d = 4)\n• negative: 20, 17, 14, 11 ... (d = −3), like water in a tank going down by the same amount each day\n• zero: 5, 5, 5, 5 ... (d = 0)\n\nNot every list is an AP. 1, 2, 4, 8 ... is not an AP because the differences are 1, 2, 4, which are not the same.",
+          "questions": [
+            ["In the AP 50, 60, 70, 80, the common difference is:", ["10", "50", "60", "5"], 0, "60 − 50 = 10."],
+            ["Which list is an AP?", ["3, 7, 11, 15", "1, 2, 4, 8", "1, 4, 9, 16", "2, 6, 18, 54"], 0, "Each term increases by 4."],
+            ["In 20, 17, 14, 11, d is:", ["−3", "3", "17", "−20"], 0, "17 − 20 = −3."],
+            ["The first term of an AP is usually called:", ["a", "d", "n", "S"], 0, "a stands for the first term."],
+            ["How do you find d?", ["Subtract a term from the next term", "Add the first two terms", "Multiply the terms", "Divide by 2"], 0, "d = (next term) − (current term)."],
+            ["Why is 1, 2, 4, 8 NOT an AP?", ["The differences are not the same", "It has only 4 terms", "It starts with 1", "It is decreasing"], 0, "The differences are 1, 2 and 4."],
+            ["5, 5, 5, 5 is an AP with d =", ["0", "5", "1", "−5"], 0, "Nothing is added, so d = 0."],
+            ["The next term of 2, 9, 16, 23 is:", ["30", "29", "32", "25"], 0, "d = 7, so 23 + 7 = 30."]
+          ]
+        },
+        {
+          "id": "c10-math-ap-2",
+          "title": "The nth term",
+          "icon": "format-list-numbered",
+          "key_idea": "The nth term of an AP is aₙ = a + (n − 1)d.",
+          "body": "We don't need to write the whole list to find a far-away term. There is a formula.\n\nThink about it: to reach the 2nd term, you add d once. To reach the 3rd, you add d twice. To reach the nth term, you add d (n − 1) times. So:\n\naₙ = a + (n − 1)d\n\nExample 1: Priya saves 50, 60, 70, ... How much does she save in week 12?\na = 50, d = 10, n = 12.\na₁₂ = 50 + (12 − 1) × 10 = 50 + 110 = ₹160.\n\nExample 2: Which term of the AP 3, 8, 13, 18, ... is 78?\na = 3, d = 5. We want aₙ = 78.\n78 = 3 + (n − 1) × 5\n75 = (n − 1) × 5\nn − 1 = 15 → n = 16. So 78 is the 16th term.\n\nExample 3: A tree is 1.2 m tall and grows 0.3 m every year. Its height in the 5th year is 1.2 + 4 × 0.3 = 2.4 m.",
+          "questions": [
+            ["The formula for the nth term of an AP is:", ["a + (n − 1)d", "a + nd", "n + (a − 1)d", "a × n × d"], 0, "You add d exactly (n − 1) times to a."],
+            ["For 50, 60, 70, ..., the 12th term is:", ["160", "170", "120", "110"], 0, "50 + 11 × 10 = 160."],
+            ["Which term of 3, 8, 13, ... is 78?", ["16th", "15th", "26th", "13th"], 0, "78 = 3 + (n − 1)5 → n = 16."],
+            ["For a = 2 and d = 3, the 10th term is:", ["29", "32", "30", "27"], 0, "2 + 9 × 3 = 29."],
+            ["To reach the 5th term, you add d how many times?", ["4", "5", "6", "1"], 0, "n − 1 = 4."],
+            ["A tree 1.2 m tall grows 0.3 m every year. Height in the 5th year?", ["2.4 m", "2.7 m", "1.5 m", "3.0 m"], 0, "1.2 + 4 × 0.3 = 2.4."],
+            ["For 10, 7, 4, ..., the 6th term is:", ["−5", "−2", "1", "5"], 0, "10 + 5 × (−3) = −5."],
+            ["If a = 5 and the 3rd term is 11, then d =", ["3", "6", "2", "11"], 0, "11 = 5 + 2d → d = 3."]
+          ]
+        },
+        {
+          "id": "c10-math-ap-3",
+          "title": "Sum of an AP",
+          "icon": "sigma",
+          "key_idea": "The sum of the first n terms is Sₙ = n/2 × [2a + (n − 1)d], or n/2 × (first term + last term).",
+          "body": "How much does Priya save in total in 10 weeks if she saves 50, 60, 70, ...?\n\nThere is a neat trick. Write the sum forwards and backwards:\nS = 50 + 60 + ... + 140\nS = 140 + 130 + ... + 50\nAdd them: every pair adds to 190, and there are 10 pairs. So 2S = 10 × 190, and S = 950.\n\nThis gives the formulas:\nSₙ = n/2 × (first term + last term)\nSₙ = n/2 × [2a + (n − 1)d]\n\nExample 1: Sum of the first 10 terms of 50, 60, 70, ...\nS₁₀ = 10/2 × [2 × 50 + 9 × 10] = 5 × [100 + 90] = 5 × 190 = ₹950.\n\nExample 2: Sum of the first 100 natural numbers, 1 + 2 + ... + 100:\nS = 100/2 × (1 + 100) = 50 × 101 = 5050.\n\nExample 3: Logs are stacked with 20 in the bottom row, 19 in the next, down to 5 at the top. There are 16 rows. Total = 16/2 × (20 + 5) = 8 × 25 = 200 logs.",
+          "questions": [
+            ["Sₙ = n/2 × (first term + ____)", ["Last term", "d", "n", "a"], 0, "Sum = n/2 × (first + last)."],
+            ["The sum of 1 + 2 + ... + 100 is:", ["5050", "5000", "10100", "100"], 0, "100/2 × 101 = 5050."],
+            ["Savings 50, 60, 70, ... for 10 weeks total:", ["₹950", "₹1400", "₹500", "₹140"], 0, "5 × (100 + 90) = 950."],
+            ["Logs in rows of 20, 19, ..., 5 (16 rows). Total logs:", ["200", "250", "320", "100"], 0, "16/2 × (20 + 5) = 200."],
+            ["Sum of the first 5 terms of 2, 4, 6, ...", ["30", "10", "20", "40"], 0, "5/2 × (2 + 10) = 30."],
+            ["Which is the other sum formula?", ["n/2 × [2a + (n − 1)d]", "n × a × d", "a + (n − 1)d", "n/2 × d"], 0, "This comes from substituting the last term."],
+            ["Sum of the first 4 terms of 5, 5, 5, 5 is:", ["20", "5", "10", "25"], 0, "4 × 5 = 20 (d = 0)."],
+            ["Writing the sum forwards and backwards works because:", ["Each pair adds to the same total", "Numbers get bigger", "d is always 1", "It doubles n"], 0, "First + last = second + second-last = ..."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10-math-trig",
+      "title": "Introduction to Trigonometry",
+      "units": [
+        {
+          "id": "c10-math-trig-1",
+          "title": "Sides of a right triangle",
+          "icon": "triangle-outline",
+          "key_idea": "In a right triangle, the hypotenuse is opposite the right angle; the other sides are named 'opposite' and 'adjacent' from the chosen angle.",
+          "body": "Trigonometry studies the relation between the sides and angles of a triangle. We start with a right triangle: one angle is exactly 90°.\n\nImagine a ladder leaning against a house wall. The wall, the ground and the ladder form a right triangle. The right angle is where the wall meets the ground.\n\nNaming the sides:\n1. Hypotenuse: the longest side, opposite the right angle. Here it is the ladder.\n2. Pick the angle between the ladder and the ground; call it θ (theta).\n3. Opposite side: the side facing θ. Here it is the wall height.\n4. Adjacent side: the side next to θ that is not the hypotenuse. Here it is the ground distance from the wall.\n\nIf we pick the other angle (at the top of the ladder), the opposite and adjacent sides swap. The hypotenuse never changes.\n\nThe sides follow Pythagoras' theorem:\nHypotenuse² = Opposite² + Adjacent²\nIf the wall height is 4 m and the ladder's foot is 3 m from the wall, the ladder is √(16 + 9) = √25 = 5 m long.",
+          "questions": [
+            ["The longest side of a right triangle is the:", ["Hypotenuse", "Opposite side", "Adjacent side", "Base angle"], 0, "The hypotenuse is opposite the 90° angle and is the longest."],
+            ["For a ladder against a wall, the hypotenuse is the:", ["Ladder", "Wall", "Ground", "Window"], 0, "The ladder is opposite the right angle."],
+            ["If θ is at the ladder's foot, the opposite side is the:", ["Wall height", "Ladder", "Ground distance", "Roof"], 0, "The wall faces the angle at the foot."],
+            ["Wall 4 m, ground distance 3 m. The ladder length is:", ["5 m", "7 m", "12 m", "1 m"], 0, "√(16 + 9) = 5."],
+            ["Pythagoras' theorem says:", ["Hyp² = Opp² + Adj²", "Hyp = Opp + Adj", "Opp² = Hyp² + Adj²", "Hyp² = Opp × Adj"], 0, "Square of the hypotenuse equals the sum of squares of the other sides."],
+            ["When you switch to the other acute angle, what changes?", ["Opposite and adjacent swap", "The hypotenuse changes", "Nothing changes", "The right angle moves"], 0, "Opposite and adjacent depend on the chosen angle."],
+            ["A right triangle has one angle equal to:", ["90°", "60°", "45°", "180°"], 0, "That is the definition of a right triangle."],
+            ["The adjacent side is:", ["Next to θ, but not the hypotenuse", "Opposite to θ", "Always the longest", "The right angle"], 0, "Adjacent means beside the angle."]
+          ]
+        },
+        {
+          "id": "c10-math-trig-2",
+          "title": "sin, cos and tan",
+          "icon": "math-compass",
+          "key_idea": "sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.",
+          "body": "For an angle θ in a right triangle, we define three ratios:\n\n• sin θ = Opposite ÷ Hypotenuse\n• cos θ = Adjacent ÷ Hypotenuse\n• tan θ = Opposite ÷ Adjacent\n\nA memory trick: \"Some People Have Curly Brown Hair Through Proper Brushing\" gives S = P/H, C = B/H, T = P/B, where P is perpendicular (opposite), B is base (adjacent) and H is hypotenuse.\n\nExample: the ladder triangle with opposite = 4, adjacent = 3, hypotenuse = 5.\nsin θ = 4/5, cos θ = 3/5, tan θ = 4/3.\n\nThese ratios depend only on the angle, not on the size of the triangle. A small 3-4-5 triangle and a big 6-8-10 triangle have the same angles and the same ratios.\n\nUseful facts:\n1. tan θ = sin θ ÷ cos θ.\n2. sin²θ + cos²θ = 1 (from Pythagoras). Check: (4/5)² + (3/5)² = 16/25 + 9/25 = 1. ✓\n3. Because the hypotenuse is the longest side, sin θ and cos θ are never more than 1.",
+          "questions": [
+            ["sin θ equals:", ["Opposite ÷ Hypotenuse", "Adjacent ÷ Hypotenuse", "Opposite ÷ Adjacent", "Hypotenuse ÷ Opposite"], 0, "sin = P/H."],
+            ["cos θ equals:", ["Adjacent ÷ Hypotenuse", "Opposite ÷ Hypotenuse", "Opposite ÷ Adjacent", "Adjacent ÷ Opposite"], 0, "cos = B/H."],
+            ["tan θ equals:", ["Opposite ÷ Adjacent", "Adjacent ÷ Opposite", "Opposite ÷ Hypotenuse", "Hypotenuse ÷ Adjacent"], 0, "tan = P/B."],
+            ["In a 3-4-5 triangle (opposite 4, adjacent 3), sin θ =", ["4/5", "3/5", "4/3", "5/4"], 0, "Opposite/Hypotenuse = 4/5."],
+            ["sin²θ + cos²θ =", ["1", "0", "2", "tan θ"], 0, "This identity comes from Pythagoras' theorem."],
+            ["tan θ can also be written as:", ["sin θ ÷ cos θ", "cos θ ÷ sin θ", "sin θ × cos θ", "1 − sin θ"], 0, "(P/H) ÷ (B/H) = P/B = tan θ."],
+            ["Can sin θ be 1.5 in a right triangle?", ["No, sin θ is never more than 1", "Yes, often", "Only for big triangles", "Only for 90°"], 0, "The opposite side can't be longer than the hypotenuse."],
+            ["Do trig ratios change if the triangle is made bigger with the same angles?", ["No, they stay the same", "Yes, they double", "Yes, they halve", "They become zero"], 0, "Ratios depend only on the angle."]
+          ]
+        },
+        {
+          "id": "c10-math-trig-3",
+          "title": "Using trigonometry: heights",
+          "icon": "home-roof",
+          "key_idea": "Using tan θ = height ÷ distance, you can find the height of a tree or tower without climbing it.",
+          "body": "Trigonometry lets us measure heights we cannot climb.\n\nStanding on the ground, if you look up at the top of a tree, your line of sight makes an angle with the ground. This is the angle of elevation.\n\nSome standard values (remember these):\n• tan 45° = 1\n• tan 30° = 1/√3 ≈ 0.58\n• tan 60° = √3 ≈ 1.73\n• sin 30° = 1/2, cos 60° = 1/2\n\nExample 1: You stand 20 m from a tree. The angle of elevation of its top is 45°.\ntan 45° = height ÷ 20 → 1 = height ÷ 20 → height = 20 m.\n\nExample 2: A water tank tower casts a shadow 10 m long when the sun's elevation is 60°.\ntan 60° = height ÷ 10 → height = 10 × √3 ≈ 17.3 m.\n\nExample 3: A 10 m ladder makes a 60° angle with the ground. How high up the wall does it reach?\nsin 60° = height ÷ 10, and sin 60° = √3/2 ≈ 0.87, so height ≈ 8.7 m.\n\nSafety: when using a ladder, keep its base firm and ask someone to hold it.",
+          "questions": [
+            ["tan 45° =", ["1", "0", "√3", "1/2"], 0, "At 45°, opposite = adjacent, so tan = 1."],
+            ["You are 20 m from a tree; elevation of its top is 45°. Its height is:", ["20 m", "10 m", "40 m", "45 m"], 0, "height = 20 × tan 45° = 20."],
+            ["The angle between your line of sight and the ground when looking up is the:", ["Angle of elevation", "Angle of depression", "Right angle", "Straight angle"], 0, "Looking up gives an angle of elevation."],
+            ["Shadow 10 m, sun's elevation 60°. Tower height ≈", ["17.3 m", "10 m", "5.8 m", "20 m"], 0, "10 × √3 ≈ 17.3 m."],
+            ["sin 30° =", ["1/2", "1", "√3/2", "0"], 0, "A standard value: sin 30° = 1/2."],
+            ["To find height from distance and elevation angle, we use:", ["tan θ", "sin²θ", "the sum of an AP", "percent"], 0, "tan θ = height ÷ distance."],
+            ["tan 60° is about:", ["1.73", "0.58", "1", "0.5"], 0, "tan 60° = √3 ≈ 1.73."],
+            ["A 10 m ladder at 60° to the ground reaches a height of about:", ["8.7 m", "5 m", "10 m", "17.3 m"], 0, "10 × sin 60° ≈ 10 × 0.87 = 8.7 m."]
+          ]
+        }
+      ]
+    }
+  ]
+}

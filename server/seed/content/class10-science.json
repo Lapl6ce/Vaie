@@ -1,0 +1,120 @@
+{
+  "class": 10,
+  "subject": "Science",
+  "chapters": [
+    {
+      "id": "c10-sci-elec",
+      "title": "Electricity",
+      "units": [
+        {
+          "id": "c10-sci-elec-1",
+          "title": "Electric current and circuits",
+          "icon": "flash",
+          "key_idea": "Electric current is the flow of charge through a closed path called a circuit; it is measured in amperes.",
+          "body": "When you switch on a bulb, electric charges start flowing through the wires. This flow of charge is called electric current.\n\nCurrent flows only when there is a complete, closed path called a circuit. A simple circuit has:\n1. A source, like a cell or battery, which pushes the charges.\n2. Wires that carry the current.\n3. A device, like a bulb, that uses the electricity.\n4. A switch to open or close the path.\n\nWhen the switch is on, the circuit is closed and the bulb glows. When it is off, there is a gap, the circuit is open, and no current flows.\n\nCurrent is measured in amperes (A) using an ammeter, which is connected in series (in line) with the circuit.\n\nThink of water in a pipe from a tank on the roof. The tank's height pushes the water, the pipe carries it, and a tap controls it. In a circuit, the battery pushes, the wire carries, and the switch controls.\n\nSafety: Never touch bare wires or switches with wet hands. Household electricity can kill.",
+          "questions": [
+            ["Electric current is the flow of:", ["Electric charge", "Water", "Air", "Light"], 0, "Current is the flow of charges through a conductor."],
+            ["A bulb glows only when the circuit is:", ["Closed", "Open", "Broken", "Wet"], 0, "Current needs a complete path."],
+            ["The unit of electric current is:", ["Ampere", "Volt", "Ohm", "Watt"], 0, "Current is measured in amperes (A)."],
+            ["An ammeter is connected:", ["In series with the circuit", "In parallel only", "Outside the circuit", "To the ground"], 0, "It must carry the same current, so it goes in series."],
+            ["In the water-pipe comparison, the battery is like:", ["The water tank's push", "The tap", "The bucket", "The roof"], 0, "The battery pushes charges like the tank's height pushes water."],
+            ["What does a switch do?", ["Opens or closes the circuit", "Makes electricity", "Stores water", "Measures current"], 0, "A switch controls whether current can flow."],
+            ["Why should you not touch switches with wet hands?", ["Water can let current pass through you", "Switches get dirty", "It wastes electricity", "Water makes switches heavy"], 0, "Wet skin conducts electricity and can cause a dangerous shock."],
+            ["When the switch is off, the circuit is:", ["Open", "Closed", "Short", "Full"], 0, "An open circuit has a gap, so no current flows."]
+          ]
+        },
+        {
+          "id": "c10-sci-elec-2",
+          "title": "Voltage, resistance and Ohm's law",
+          "icon": "omega",
+          "key_idea": "Ohm's law: V = I × R. Voltage pushes current; resistance opposes it.",
+          "body": "Voltage (potential difference) is the push that makes charges flow. It is measured in volts (V) using a voltmeter, connected across (in parallel with) a device. A torch cell gives about 1.5 V. Indian home supply is about 220–230 V.\n\nResistance is how much a material opposes the flow of current. It is measured in ohms (Ω). Copper wire has very low resistance, so it is used for wiring. The thin coil (filament) inside an old bulb has high resistance, so it gets hot and glows.\n\nOhm's law connects them:\nV = I × R\nwhere V is voltage, I is current and R is resistance (at a constant temperature).\n\nExample: a 12 V battery is connected to a 4 Ω resistor. Current I = V ÷ R = 12 ÷ 4 = 3 A.\n\nResistance of a wire increases when:\n1. The wire is longer.\n2. The wire is thinner.\nIt also depends on the material.\n\nSo for heavy appliances like a motor pump, electricians use thicker wire, so it doesn't heat up dangerously.",
+          "questions": [
+            ["Ohm's law is:", ["V = I × R", "V = I + R", "I = V × R", "R = V × I"], 0, "Voltage equals current times resistance."],
+            ["12 V across a 4 Ω resistor gives a current of:", ["3 A", "48 A", "16 A", "8 A"], 0, "I = 12 ÷ 4 = 3 A."],
+            ["The unit of resistance is:", ["Ohm", "Ampere", "Volt", "Newton"], 0, "Resistance is measured in ohms (Ω)."],
+            ["A voltmeter is connected:", ["In parallel (across) a device", "In series", "Not in the circuit", "To the switch only"], 0, "It measures the difference across two points."],
+            ["Why is copper used for house wiring?", ["It has very low resistance", "It is magnetic", "It has high resistance", "It is cheap plastic"], 0, "Low resistance lets current flow with little heating."],
+            ["A longer wire has:", ["More resistance", "Less resistance", "No resistance", "The same resistance"], 0, "Resistance increases with length."],
+            ["Why do heavy appliances need thicker wires?", ["Thicker wires have less resistance and heat less", "Thick wires look better", "Thin wires carry more current", "To use more copper"], 0, "Thin wires heat up with large current and can cause fires."],
+            ["About how much is Indian household voltage?", ["220–230 V", "1.5 V", "12 V", "1000 V"], 0, "Indian homes get roughly 230 V AC."]
+          ]
+        },
+        {
+          "id": "c10-sci-elec-3",
+          "title": "Power and electrical safety",
+          "icon": "lightning-bolt-circle",
+          "key_idea": "Power P = V × I (watts); electricity bills count energy in kWh (units); fuses and earthing keep us safe.",
+          "body": "Electric power tells how fast a device uses energy. It is measured in watts (W).\nP = V × I\nA 230 V fan drawing 0.3 A uses about 69 W.\n\nYour electricity bill counts energy, not power. Energy = Power × Time. The unit on the bill is the kilowatt-hour (kWh), also called a \"unit\". A 100 W bulb on for 10 hours uses 100 × 10 = 1000 Wh = 1 kWh = 1 unit.\n\nSo, to save money: switch off lights when not needed and prefer LED bulbs. A 9 W LED gives about as much light as a 60 W old bulb.\n\nSafety devices:\n1. Fuse or MCB: if too much current flows (overload or short circuit), the fuse melts or the MCB trips and cuts the supply, preventing fire.\n2. Earthing: the green wire connects metal bodies of appliances to the ground, so a leak of current goes to the earth instead of through your body.\n\nSafety: Never overload one socket with many plugs. Switch off the main supply before any repair, and call a licensed electrician for wiring work.",
+          "questions": [
+            ["Electric power is calculated by:", ["P = V × I", "P = V ÷ I", "P = I ÷ V", "P = V + I"], 0, "Power equals voltage times current."],
+            ["A 100 W bulb used for 10 hours uses:", ["1 kWh (1 unit)", "10 kWh", "100 kWh", "0.1 kWh"], 0, "100 × 10 = 1000 Wh = 1 kWh."],
+            ["The 'unit' on an electricity bill is:", ["Kilowatt-hour", "Watt", "Volt", "Ampere"], 0, "Bills charge for energy in kWh."],
+            ["What does a fuse or MCB do?", ["Cuts the supply when too much current flows", "Increases voltage", "Stores electricity", "Makes bulbs brighter"], 0, "It protects wiring from overload and short circuits."],
+            ["Earthing protects us by:", ["Sending leaking current into the ground", "Making appliances heavier", "Increasing current", "Cooling wires"], 0, "Leakage flows to earth instead of through a person."],
+            ["Which saves more electricity for the same light?", ["A 9 W LED bulb", "A 60 W old bulb", "Both the same", "A 100 W bulb"], 0, "LEDs use far less power for similar light."],
+            ["Before repairing any electrical fitting, you must:", ["Switch off the main supply", "Wet your hands", "Keep the switch on", "Use a metal spoon"], 0, "Always cut the supply first, and call an electrician if unsure."],
+            ["Why is overloading one socket dangerous?", ["Too much current can heat wires and cause a fire", "It saves electricity", "It makes plugs stronger", "Nothing happens"], 0, "Excess current overheats wires."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10-sci-light",
+      "title": "Light – Reflection and Refraction",
+      "units": [
+        {
+          "id": "c10-sci-light-1",
+          "title": "Reflection of light",
+          "icon": "mirror",
+          "key_idea": "Light bounces off smooth shiny surfaces; the angle of incidence equals the angle of reflection.",
+          "body": "We see objects because light from them reaches our eyes. Light travels in straight lines.\n\nWhen light hits a smooth, shiny surface like a mirror or still water, it bounces back. This is reflection.\n\nThe laws of reflection:\n1. The angle at which light hits the mirror (angle of incidence) is equal to the angle at which it bounces off (angle of reflection).\n2. The incoming ray, the reflected ray and the normal (an imaginary line standing straight up from the mirror) all lie in the same flat plane.\n\nYou can see this when you shine a torch at a mirror at a slant: the light bounces off at the same slant on the other side.\n\nA plane (flat) mirror forms an image that is:\n• the same size as the object,\n• as far behind the mirror as the object is in front,\n• upright,\n• laterally inverted: your right hand looks like the left hand in the mirror. This is why AMBULANCE is written in reverse on the front of ambulances, so drivers read it correctly in their mirrors.",
+          "questions": [
+            ["Light bouncing off a mirror is called:", ["Reflection", "Refraction", "Absorption", "Dispersion"], 0, "Bouncing back from a surface is reflection."],
+            ["According to the law of reflection:", ["Angle of incidence = angle of reflection", "The angles always add to 180°", "The reflected angle is always 90°", "There is no rule"], 0, "The two angles are equal."],
+            ["The normal is:", ["A line perpendicular to the mirror", "The mirror itself", "The reflected ray", "A type of light"], 0, "The normal stands straight up from the surface."],
+            ["Why is AMBULANCE written in reverse?", ["To read correctly in a driver's mirror", "As a design", "To confuse people", "It is a spelling mistake"], 0, "Mirrors laterally invert, so the reversed word appears correct."],
+            ["A plane mirror image is:", ["Same size and upright", "Bigger and upside down", "Smaller and upside down", "Not formed"], 0, "Plane mirrors give same-size, upright images."],
+            ["You stand 2 m in front of a mirror. Your image is:", ["2 m behind the mirror", "4 m behind the mirror", "On the mirror", "1 m behind the mirror"], 0, "The image is as far behind as the object is in front."],
+            ["Light normally travels in:", ["Straight lines", "Circles", "Zigzags", "Waves you can see"], 0, "That is why shadows have sharp shapes."],
+            ["In a mirror, your raised right hand appears as:", ["The left hand", "The right hand", "Both hands", "No hand"], 0, "This is lateral inversion."]
+          ]
+        },
+        {
+          "id": "c10-sci-light-2",
+          "title": "Spherical mirrors",
+          "icon": "circle-half-full",
+          "key_idea": "Concave mirrors curve inward and can focus light; convex mirrors curve outward and show a wider view.",
+          "body": "Take a shiny steel spoon. Its inside curve is like a concave mirror, and its back is like a convex mirror. These are spherical mirrors, parts of a hollow sphere.\n\nConcave mirror (curved inward):\n• It brings parallel rays of light together at a point called the focus.\n• Close up, it makes a bigger, upright image. That is why it is used as a shaving or make-up mirror.\n• Uses: torch and vehicle headlights (a bulb at the focus sends out a strong straight beam), dentists' mirrors, and solar cookers that focus sunlight to cook food.\n\nConvex mirror (curved outward):\n• It spreads light out.\n• It always forms a small, upright image.\n• It shows a much wider area.\n• Use: rear-view mirrors in vehicles, and mirrors at sharp turns on hill roads, so drivers can see traffic around the bend.\n\nThe distance from the mirror to the focus is the focal length. For spherical mirrors, focal length is half of the radius of curvature: f = R/2.",
+          "questions": [
+            ["Which mirror is used as a vehicle's rear-view mirror?", ["Convex", "Concave", "Plane", "None"], 0, "Convex mirrors show a wider view."],
+            ["A solar cooker uses which mirror to focus sunlight?", ["Concave", "Convex", "Plane", "Broken"], 0, "Concave mirrors bring light to a focus."],
+            ["The inside of a shiny spoon acts like a:", ["Concave mirror", "Convex mirror", "Plane mirror", "Lens"], 0, "It curves inward."],
+            ["A convex mirror always forms an image that is:", ["Small and upright", "Large and inverted", "Same size", "Not formed"], 0, "Convex mirrors give diminished, upright images."],
+            ["Torch headlights use a concave mirror because:", ["A bulb at the focus gives a strong straight beam", "It makes light spread everywhere", "It is cheaper", "It cools the bulb"], 0, "Light from the focus reflects into a parallel beam."],
+            ["Focal length f and radius of curvature R are related by:", ["f = R/2", "f = 2R", "f = R", "f = R²"], 0, "Focal length is half the radius of curvature."],
+            ["Mirrors at sharp hill-road turns are usually:", ["Convex", "Concave", "Plane", "Coloured glass"], 0, "They let drivers see a wide area around the bend."],
+            ["A shaving mirror is concave because close up it gives:", ["A bigger, upright image", "A tiny image", "No image", "An upside-down image"], 0, "Near a concave mirror, the image is enlarged and upright."]
+          ]
+        },
+        {
+          "id": "c10-sci-light-3",
+          "title": "Refraction of light",
+          "icon": "glass-pint-outline",
+          "key_idea": "Light bends when it passes from one material into another because its speed changes.",
+          "body": "Put a pencil in a glass of water. It looks bent at the water's surface. A pond also looks shallower than it really is. Both happen because of refraction.\n\nRefraction is the bending of light when it passes from one transparent material to another, like from air into water or glass. It happens because light travels at different speeds in different materials. Light is fastest in air (and vacuum), slower in water, and slower still in glass.\n\nRules:\n1. Going from air into water or glass (into a denser medium), light slows down and bends towards the normal.\n2. Coming out from water into air, light speeds up and bends away from the normal.\n\nThe refractive index tells how much a material slows light. Water's is about 1.33 and glass's about 1.5. A higher number means more bending.\n\nSafety tip from science: because refraction makes water look shallower, never jump into a pond or canal assuming it is shallow.\n\nLenses in spectacles and cameras use refraction to focus light. A convex lens (thicker in the middle) brings light together, like a magnifying glass.",
+          "questions": [
+            ["Why does a pencil look bent in water?", ["Refraction of light", "Reflection of light", "The pencil really bends", "Water is magnetic"], 0, "Light bends as it leaves water and enters air."],
+            ["Refraction happens because:", ["Light's speed changes in different materials", "Light stops", "Light becomes sound", "Mirrors are present"], 0, "Change in speed causes bending."],
+            ["When light goes from air into glass, it bends:", ["Towards the normal", "Away from the normal", "Not at all", "Backwards"], 0, "Entering a denser medium, light slows and bends towards the normal."],
+            ["Why does a pond look shallower than it is?", ["Refraction", "Reflection", "Evaporation", "Gravity"], 0, "Bending of light makes the bottom appear raised."],
+            ["The refractive index of glass is about:", ["1.5", "15", "0.5", "3"], 0, "Glass has a refractive index around 1.5."],
+            ["In which material does light travel fastest?", ["Air", "Water", "Glass", "Diamond"], 0, "Light is fastest in air or vacuum."],
+            ["A magnifying glass is a:", ["Convex lens", "Concave mirror", "Plane mirror", "Prism only"], 0, "A convex lens is thicker in the middle and makes things look bigger."],
+            ["What safety lesson does refraction teach?", ["Water may be deeper than it looks", "Water is always shallow", "Ponds are always safe", "Light makes water safe"], 0, "Never assume water is shallow just by looking."]
+          ]
+        }
+      ]
+    }
+  ]
+}

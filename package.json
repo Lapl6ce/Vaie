@@ -1,0 +1,15 @@
+{
+  "name": "vaie",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vaie: learn in your own language. Expo app + local town hall server.",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix app install",
+    "dev": "npm --prefix server run dev",
+    "seed": "npm --prefix server run seed",
+    "app": "npm --prefix app start",
+    "app:tunnel": "npm --prefix app start -- --tunnel",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix app run typecheck",
+    "app:apk": "npm --prefix app run start:apk"
+  }
+}
