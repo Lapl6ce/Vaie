@@ -9,7 +9,6 @@
     "seed": "npm --prefix server run seed",
     "app": "npm --prefix app start",
     "app:tunnel": "npm --prefix app start -- --tunnel",
-    "typecheck": "npm --prefix server run typecheck && npm --prefix app run typecheck",
-    "app:apk": "npm --prefix app run start:apk"
+    "typecheck": "npm --prefix server run typecheck && npm --prefix app run typecheck"
   }
 }

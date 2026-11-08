@@ -7,7 +7,8 @@ import path from 'node:path';
 import { config } from './config.ts';
 import { db } from './db.ts';
 
-type QTuple = [string, string[], number, string];
+/** [question, 4 options, answer index, explanation, difficulty 1 easy | 2 medium | 3 hard] */
+type QTuple = [string, string[], number, string, number?];
 type SeedFile = {
   class: number;
   subject: string;
@@ -30,7 +31,7 @@ db.transaction(() => {
   db.exec('DELETE FROM questions; DELETE FROM units; DELETE FROM chapters;');
   const insC = db.prepare('INSERT INTO chapters (id, class, subject, title, ord) VALUES (?,?,?,?,?)');
   const insU = db.prepare('INSERT INTO units (id, chapter_id, ord, title, body, key_idea, icon) VALUES (?,?,?,?,?,?,?)');
-  const insQ = db.prepare('INSERT INTO questions (id, unit_id, q, options, answer, explanation) VALUES (?,?,?,?,?,?)');
+  const insQ = db.prepare('INSERT INTO questions (id, unit_id, q, options, answer, explanation, difficulty) VALUES (?,?,?,?,?,?,?)');
 
   for (const f of files) {
     const data = JSON.parse(fs.readFileSync(path.join(contentDir, f), 'utf8')) as SeedFile;
@@ -41,9 +42,9 @@ db.transaction(() => {
         insU.run(u.id, ch.id, ui, u.title, u.body, u.key_idea, u.icon);
         units++;
         if (u.questions.length < 5) throw new Error(`${u.id} needs at least 5 questions`);
-        u.questions.forEach(([q, options, answer, explanation], qi) => {
+        u.questions.forEach(([q, options, answer, explanation, difficulty], qi) => {
           if (options.length !== 4 || answer < 0 || answer > 3) throw new Error(`Bad question ${u.id}#${qi}`);
-          insQ.run(`${u.id}-q${qi + 1}`, u.id, q, JSON.stringify(options), answer, explanation);
+          insQ.run(`${u.id}-q${qi + 1}`, u.id, q, JSON.stringify(options), answer, explanation, difficulty === 1 || difficulty === 3 ? difficulty : 2);
           questions++;
         });
       });

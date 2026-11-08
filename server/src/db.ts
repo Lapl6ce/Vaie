@@ -107,7 +107,20 @@ CREATE TABLE IF NOT EXISTS translations (
   out TEXT NOT NULL,
   created_at INTEGER NOT NULL
 );
+CREATE TABLE IF NOT EXISTS game_results (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  profile_id TEXT NOT NULL,
+  chapter_id TEXT NOT NULL,
+  mode TEXT NOT NULL,
+  players TEXT NOT NULL,
+  winner TEXT,
+  created_at INTEGER NOT NULL
+);
 `);
+
+// Migrations for databases created before a column existed.
+const qCols = (db.prepare('PRAGMA table_info(questions)').all() as { name: string }[]).map((c) => c.name);
+if (!qCols.includes('difficulty')) db.exec('ALTER TABLE questions ADD COLUMN difficulty INTEGER NOT NULL DEFAULT 2');
 
 export type Profile = {
   id: string;

@@ -28,7 +28,7 @@ export type PathChapter = {
   title: string;
   locked: boolean;
   units: { id: string; title: string; icon: string; status: NodeStatus; stars: number }[];
-  test: { status: NodeStatus; bestScore: number };
+  test: { status: NodeStatus; bestScore: number; early?: boolean; passPct?: number };
 };
 
 export type Unit = {
@@ -74,6 +74,8 @@ export type QuizResult = {
   newBadges: Badge[];
   streak: StreakInfo;
   unlocked: string | null;
+  /** A skip test was passed: the whole module is now complete. */
+  skipped?: boolean;
 };
 
 export type Category = 'in_scope' | 'legal' | 'financial' | 'health' | 'mental_health' | 'emergency' | 'off_topic';

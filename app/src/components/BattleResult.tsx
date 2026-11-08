@@ -13,6 +13,7 @@ import { C, WORDMARK_FONT } from '../theme';
 import { T } from '../i18n/T';
 import { S } from '../i18n/strings';
 import type { QuizResult } from '../lib/types';
+import type { Boss } from '../lib/bosses';
 import { Icon, type IconName } from './ui';
 import { Animated, EASE, rise, settle } from './motion';
 
@@ -41,20 +42,33 @@ function useCountUp(to: number, active: boolean, instant: boolean, ms = 900) {
   return active && instant ? to : n;
 }
 
-function Banner({ won }: { won: boolean }) {
+function Banner({ won, boss }: { won: boolean; boss?: Boss }) {
   const color = won ? C.gold : C.terracotta;
+  const label = boss ? (won ? S.bossDown : S.bossWon) : won ? S.victory : S.regroup;
   const line = useSharedValue(0);
   useEffect(() => {
     line.set(withDelay(150, withTiming(1, { duration: 700, easing: EASE })));
   }, [line]);
   const lineStyle = useAnimatedStyle(() => ({ opacity: line.get(), transform: [{ scaleX: line.get() }] }));
   return (
-    <View style={styles.banner}>
-      <Animated.View style={[styles.bannerLine, { backgroundColor: color }, lineStyle]} />
-      <Animated.View entering={settle(0)}>
-        <T style={[styles.bannerText, { color }]}>{won ? S.victory : S.regroup}</T>
-      </Animated.View>
-      <Animated.View style={[styles.bannerLine, { backgroundColor: color }, lineStyle]} />
+    <View style={{ alignItems: 'center', gap: 4 }}>
+      {boss ? (
+        <Animated.View entering={settle(0)} style={[styles.bossShot, won && { transform: [{ rotate: '-18deg' }] }]}>
+          <Text style={[styles.bossEmoji, won && { opacity: 0.45 }]}>{boss.emoji}</Text>
+          {won ? (
+            <View style={styles.bossCrown}>
+              <Icon name="crown" size={18} color={C.onAccent} />
+            </View>
+          ) : null}
+        </Animated.View>
+      ) : null}
+      <View style={styles.banner}>
+        <Animated.View style={[styles.bannerLine, { backgroundColor: color }, lineStyle]} />
+        <Animated.View entering={settle(boss ? 200 : 0)} style={{ flexShrink: 1 }}>
+          <T style={[styles.bannerText, boss && styles.bannerTextBoss, { color }]}>{label}</T>
+        </Animated.View>
+        <Animated.View style={[styles.bannerLine, { backgroundColor: color }, lineStyle]} />
+      </View>
     </View>
   );
 }
@@ -121,7 +135,7 @@ function LevelBar({ result, active, instant, onLevelUp }: { result: QuizResult; 
   );
 }
 
-export function BattleResult({ result, onDone }: { result: QuizResult; onDone?: () => void }) {
+export function BattleResult({ result, boss, onDone }: { result: QuizResult; boss?: Boss; onDone?: () => void }) {
   const [phase, setPhase] = useState(0);
   const [skipped, setSkipped] = useState(false);
   const [lvlFlash, setLvlFlash] = useState(false);
@@ -169,7 +183,7 @@ export function BattleResult({ result, onDone }: { result: QuizResult; onDone?: 
 
   return (
     <Pressable onPress={skip} style={{ gap: 18 }}>
-      <Banner won={won} />
+      <Banner won={won} boss={boss} />
 
       {phase >= P.window ? (
         <Animated.View entering={rise(0, 12)} style={styles.window}>
@@ -263,6 +277,10 @@ export function BattleResult({ result, onDone }: { result: QuizResult; onDone?: 
 }
 
 const styles = StyleSheet.create({
+  bossShot: { width: 96, height: 96, alignItems: 'center', justifyContent: 'center' },
+  bossEmoji: { fontSize: 72, lineHeight: 88, textAlign: 'center' },
+  bossCrown: { position: 'absolute', top: 0, right: 0, width: 30, height: 30, borderRadius: 15, backgroundColor: C.gold, alignItems: 'center', justifyContent: 'center' },
+  bannerTextBoss: { fontSize: 34, lineHeight: 44, textAlign: 'center' },
   banner: { flexDirection: 'row', alignItems: 'center', gap: 14, paddingTop: 8 },
   bannerLine: { flex: 1, height: 1.5, borderRadius: 1 },
   bannerText: { fontFamily: WORDMARK_FONT, fontSize: 46, lineHeight: 58 },

@@ -15,7 +15,6 @@
     "expo-camera": "~58.0.14",
     "expo-clipboard": "~58.0.4",
     "expo-constants": "~58.0.15",
-    "expo-dev-client": "~58.0.18",
     "expo-file-system": "~58.0.13",
     "expo-font": "~58.0.11",
     "expo-haptics": "~58.0.7",
@@ -40,12 +39,11 @@
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "start": "expo start --go",
+    "start": "expo start",
     "android": "expo start --android",
     "typecheck": "tsc --noEmit",
     "lint": "expo lint",
-    "start:apk": "expo start --dev-client",
-    "build:apk": "npx eas-cli@latest build -p android --profile development"
+    "build:apk": "npx eas-cli@latest build -p android --profile preview"
   },
   "private": true
 }

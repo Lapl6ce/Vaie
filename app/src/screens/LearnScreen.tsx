@@ -4,33 +4,20 @@ import { Animated, PressableScale, rise, useBreath } from '../components/motion'
 import { Dimensions, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Text } from '../components/Text';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
-import Svg, { Path } from 'react-native-svg';
 import * as Haptics from 'expo-haptics';
-import { C, shadow, WORDMARK_FONT, onColor, SERIF } from '../theme';
+import { C, shadow, WORDMARK_FONT, onColor } from '../theme';
 import { T } from '../i18n/T';
 import { S } from '../i18n/strings';
 import { ScreenHeader } from '../components/ScreenHeader';
-import { ErrorBox, Icon, Loading, Pill, ProgressBar, Stars, tap, type IconName } from '../components/ui';
+import { ErrorBox, Icon, Loading, Pill, ProgressBar, tap, type IconName } from '../components/ui';
 import { api, friendlyError } from '../lib/api';
 import { useApp } from '../lib/AppState';
-import type { NodeStatus, PathChapter } from '../lib/types';
+import type { PathChapter } from '../lib/types';
 import { useVoiceScreen } from '../voice/VoiceProvider';
+import { RegionMap, type MapNode } from '../components/FantasyMap';
 import { speak } from '../voice/speaker';
 
 const W = Dimensions.get('window').width;
-const NODE = 84;
-const ROW = 150;
-const OFFSETS = [0, 70, 0, -70]; // winding pattern
-
-type MapNode = {
-  key: string;
-  title: string;
-  icon: IconName;
-  status: NodeStatus;
-  stars: number;
-  onPress: () => void;
-  isTest?: boolean;
-};
 
 function Mascot({ text }: { text: string }) {
   const breath = useBreath(true, 3600);
@@ -45,73 +32,6 @@ function Mascot({ text }: { text: string }) {
         <T style={{ fontSize: 18, fontWeight: '600', color: C.text }}>{text}</T>
       </View>
     </Animated.View>
-  );
-}
-
-function PathNode({ node, x, i }: { node: MapNode; x: number; i: number }) {
-  const isCurrent = node.status === 'current';
-  // Current node: a soft halo that breathes behind it instead of the node itself pulsing.
-  const breath = useBreath(isCurrent, 2600);
-  const halo = useAnimatedStyle(() => ({
-    opacity: interpolate(breath.get(), [0, 1], [0.18, 0.4]),
-    transform: [{ scale: interpolate(breath.get(), [0, 1], [1.05, 1.25]) }],
-  }));
-
-  const bg = node.status === 'completed' ? C.green : isCurrent ? (node.isTest ? C.terracotta : C.gold) : C.locked;
-  const icon: IconName = node.status === 'locked' ? 'lock' : node.status === 'completed' && !node.isTest ? 'check-bold' : node.icon;
-
-  return (
-    <Animated.View entering={rise(Math.min(i, 10) * 60, 14)} style={{ position: 'absolute', left: x - 70, width: 140, alignItems: 'center' }}>
-      {isCurrent ? (
-        <View style={styles.startTag}>
-          <T style={styles.startText}>{S.start_}</T>
-        </View>
-      ) : null}
-      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-        {isCurrent ? (
-          <Animated.View pointerEvents="none" style={[styles.halo, { backgroundColor: bg }, halo]} />
-        ) : null}
-        <PressableScale
-          to={0.92}
-          accessibilityRole="button"
-          accessibilityLabel={node.title}
-          onPress={node.onPress}
-          style={[styles.node, { backgroundColor: bg }]}
-        >
-          <Icon name={icon} size={36} color={node.status === 'locked' ? C.faint : onColor(bg)} />
-        </PressableScale>
-      </View>
-      {node.status === 'completed' && !node.isTest ? <Stars n={node.stars} size={20} /> : null}
-      <T style={[styles.nodeLabel, node.status === 'locked' && { color: C.muted }]} numberOfLines={2}>
-        {node.title}
-      </T>
-    </Animated.View>
-  );
-}
-
-function ChapterPath({ nodes, startIndex }: { nodes: MapNode[]; startIndex: number }) {
-  const cx = W / 2;
-  const pts = nodes.map((_, i) => ({ x: cx + OFFSETS[(startIndex + i) % OFFSETS.length], y: 30 + i * ROW + NODE / 2 }));
-  let d = '';
-  pts.forEach((p, i) => {
-    if (i === 0) d = `M ${p.x} ${p.y}`;
-    else {
-      const prev = pts[i - 1];
-      const my = (prev.y + p.y) / 2;
-      d += ` C ${prev.x} ${my}, ${p.x} ${my}, ${p.x} ${p.y}`;
-    }
-  });
-  return (
-    <View style={{ height: nodes.length * ROW + 20 }}>
-      <Svg width={W} height={nodes.length * ROW + 20} style={StyleSheet.absoluteFill}>
-        <Path d={d} stroke={C.border} strokeWidth={10} strokeLinecap="round" strokeDasharray="2 18" fill="none" />
-      </Svg>
-      {nodes.map((n, i) => (
-        <View key={n.key} style={{ position: 'absolute', top: 30 + i * ROW - (n.status === 'current' ? 36 : 0), left: 0, right: 0 }}>
-          <PathNode node={n} x={pts[i].x} i={i} />
-        </View>
-      ))}
-    </View>
   );
 }
 
@@ -166,7 +86,6 @@ export default function LearnScreen() {
   const streak = summary?.streak.current ?? 0;
   const level = summary?.level;
 
-  let nodeIndex = 0;
   return (
     <View style={{ flex: 1 }}>
       <ScreenHeader
@@ -247,7 +166,8 @@ export default function LearnScreen() {
           </View>
         ) : null}
 
-        {path?.map((ch) => {
+        {path && path.length ? <T style={styles.mapNote}>{S.cbseDemo}</T> : null}
+        {path?.map((ch, ci) => {
           const nodes: MapNode[] = [
             ...ch.units.map((u) => ({
               key: u.id,
@@ -264,25 +184,21 @@ export default function LearnScreen() {
               status: ch.test.status,
               stars: 0,
               isTest: true,
-              onPress: () =>
-                ch.test.status === 'locked'
-                  ? lockedTap()
-                  : router.push({ pathname: '/quiz', params: { kind: 'chapter', refId: ch.id } }),
+              early: ch.test.early,
+              // The chapter test is a game of Snakes & Ladders, and is always open (90% skips the module).
+              onPress: () => router.push({ pathname: '/game', params: { chapterId: ch.id } }),
             },
           ];
-          const start = nodeIndex;
-          nodeIndex += nodes.length;
           return (
-            <View key={ch.id}>
-              <Animated.View entering={rise(60)} style={[styles.chapter, ch.locked && { backgroundColor: C.card, borderColor: C.border }]}>
-                <View style={{ flex: 1 }}>
-                  <T style={styles.chapterTitle}>{ch.title}</T>
-                  <T style={styles.chapterTag}>{S.cbseDemo}</T>
-                </View>
-                <Icon name={ch.locked ? 'lock' : ch.test.status === 'completed' ? 'crown' : 'book-open-page-variant'} size={30} color={ch.locked ? C.muted : C.greenDark} />
-              </Animated.View>
-              <ChapterPath nodes={nodes} startIndex={start} />
-            </View>
+            <RegionMap
+              key={ch.id}
+              chapterId={ch.id}
+              chapterTitle={ch.title}
+              locked={ch.locked}
+              nodes={nodes}
+              index={ci}
+              width={W - 24}
+            />
           );
         })}
       </ScrollView>
@@ -315,13 +231,6 @@ const styles = StyleSheet.create({
   mascotRow: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 16, marginVertical: 14 },
   mascot: { width: 60, height: 60, borderRadius: 30, backgroundColor: C.greenLight, alignItems: 'center', justifyContent: 'center', ...shadow },
   bubble: { flex: 1, backgroundColor: C.card, borderRadius: 18, borderTopLeftRadius: 4, padding: 12, ...shadow },
-  chapter: { flexDirection: 'row', alignItems: 'center', marginHorizontal: 16, marginTop: 10, padding: 16, borderRadius: 20, backgroundColor: C.greenLight, gap: 10, ...shadow, borderColor: C.green + '40' },
-  chapterTitle: { fontSize: 22, fontFamily: SERIF, color: C.text },
-  chapterTag: { fontSize: 14, color: C.greenDark, fontWeight: '600', marginTop: 2 },
-  node: { width: NODE, height: NODE, borderRadius: NODE / 2, alignItems: 'center', justifyContent: 'center' },
-  halo: { position: 'absolute', width: NODE, height: NODE, borderRadius: NODE / 2 },
-  nodeLabel: { fontSize: 15, fontWeight: '700', textAlign: 'center', marginTop: 4, color: C.text },
-  startTag: { backgroundColor: C.card, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 4, marginBottom: 8, borderWidth: 1, borderColor: C.gold + '66' },
-  startText: { fontSize: 15, fontWeight: '900', color: C.goldDark },
   empty: { alignItems: 'center', gap: 10, padding: 32 },
+  mapNote: { fontSize: 13, color: C.faint, textAlign: 'center', marginTop: 4 },
 });

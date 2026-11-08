@@ -13,14 +13,14 @@
           "key_idea": "Kharif crops are sown with the monsoon (June–July); rabi crops are sown in winter (October–November).",
           "body": "When the same kind of plant is grown on a large area, it is called a crop. Wheat, rice, maize and pulses are crops.\n\nIn India, crops are grouped by the season they grow in.\n\nKharif crops are sown when the monsoon rains begin, around June–July, and harvested around September–October. They need a lot of water. Examples: paddy (rice), maize, soyabean, groundnut and cotton.\n\nRabi crops are sown in winter, around October–November, and harvested around March–April. They grow well in cool weather with less rain. Examples: wheat, gram, pea, mustard and linseed.\n\nWhy does this matter? If a farmer sows paddy in winter, it will not get enough water or warmth and the harvest will be poor. Choosing the right crop for the right season is the first step to a good harvest.\n\nBetween seasons, some farmers grow a short crop like moong, or plant pulses that make the soil richer for the next crop.",
           "questions": [
-            ["Kharif crops are sown in which season?", ["The monsoon (June–July)", "Winter (Oct–Nov)", "Peak summer (April)", "Any time"], 0, "Kharif crops are sown with the start of the rains."],
-            ["Which is a rabi crop?", ["Wheat", "Paddy", "Maize", "Cotton"], 0, "Wheat is sown in winter, so it is a rabi crop."],
-            ["Which is a kharif crop?", ["Paddy", "Gram", "Mustard", "Pea"], 0, "Paddy needs lots of water and is grown in the monsoon."],
-            ["Rabi crops are usually harvested around:", ["March–April", "July–August", "June", "December"], 0, "Rabi crops sown in winter are ready by spring."],
-            ["Why should paddy not be sown in winter?", ["It needs a lot of water and warmth", "It grows only in sand", "It is a rabi crop", "Winter is too rainy"], 0, "Paddy needs warm, wet conditions of the monsoon."],
-            ["A crop is:", ["The same kind of plant grown on a large area", "A wild forest", "One single tree", "A type of soil"], 0, "Many plants of the same kind grown together form a crop."],
-            ["Gram and pea are sown in:", ["Winter", "Monsoon", "Summer only", "Never"], 0, "They are rabi crops."],
-            ["Choosing the right crop for the season helps because:", ["The crop gets the water and weather it needs", "It makes the soil dry", "It needs no farmer", "It keeps birds away"], 0, "Each crop grows best in its own season."]
+            ["Kharif crops are sown in which season?", ["The monsoon (June–July)", "Winter (Oct–Nov)", "Peak summer (April)", "Any time"], 0, "Kharif crops are sown with the start of the rains.", 1],
+            ["Which is a rabi crop?", ["Wheat", "Paddy", "Maize", "Cotton"], 0, "Wheat is sown in winter, so it is a rabi crop.", 1],
+            ["Which is a kharif crop?", ["Paddy", "Gram", "Mustard", "Pea"], 0, "Paddy needs lots of water and is grown in the monsoon.", 2],
+            ["Rabi crops are usually harvested around:", ["March–April", "July–August", "June", "December"], 0, "Rabi crops sown in winter are ready by spring.", 2],
+            ["Why should paddy not be sown in winter?", ["It needs a lot of water and warmth", "It grows only in sand", "It is a rabi crop", "Winter is too rainy"], 0, "Paddy needs warm, wet conditions of the monsoon.", 3],
+            ["A crop is:", ["The same kind of plant grown on a large area", "A wild forest", "One single tree", "A type of soil"], 0, "Many plants of the same kind grown together form a crop.", 1],
+            ["Gram and pea are sown in:", ["Winter", "Monsoon", "Summer only", "Never"], 0, "They are rabi crops.", 2],
+            ["Choosing the right crop for the season helps because:", ["The crop gets the water and weather it needs", "It makes the soil dry", "It needs no farmer", "It keeps birds away"], 0, "Each crop grows best in its own season.", 3]
           ]
         },
         {
@@ -30,14 +30,14 @@
           "key_idea": "Ploughing loosens soil so roots breathe and grow; healthy seeds are sown at the right depth and spacing.",
           "body": "Before sowing, the soil must be prepared. Turning and loosening the soil is called tilling or ploughing. It is done with a plough pulled by bullocks or a tractor.\n\nWhy plough?\n1. Loose soil lets roots go deep easily.\n2. Air reaches the roots, and roots need air to breathe.\n3. It brings nutrient-rich soil from below to the top.\n4. Earthworms and microbes stay active in loose soil.\n\nAfter ploughing, big lumps are broken and the field is made level with a leveller. A level field holds water evenly.\n\nNext comes sowing. Good seeds are clean and healthy. A simple test: put seeds in a bucket of water. Damaged seeds become hollow and light, so they float. Healthy seeds sink. Use the ones that sink.\n\nSeeds should be sown at the right depth and with proper gaps between them, so plants do not fight for sunlight, water and nutrients. A seed drill attached to a tractor sows seeds evenly at the right depth and covers them with soil, which also protects them from birds.",
           "questions": [
-            ["Loosening and turning the soil is called:", ["Ploughing", "Harvesting", "Winnowing", "Weeding"], 0, "Ploughing or tilling loosens the soil."],
-            ["Why do roots need loose soil?", ["To grow deep and get air", "To stay small", "To keep water out", "To stop growing"], 0, "Loose soil lets roots spread and breathe."],
-            ["In the water test, healthy seeds:", ["Sink", "Float", "Dissolve", "Change colour"], 0, "Damaged seeds are hollow and float; good ones sink."],
-            ["Why should seeds be sown with gaps between them?", ["So plants don't compete for light, water and nutrients", "To save soil", "To attract birds", "Gaps are not needed"], 0, "Proper spacing avoids overcrowding."],
-            ["What does a seed drill do?", ["Sows seeds evenly at the right depth", "Cuts the crop", "Sprays pesticide", "Pumps water"], 0, "A seed drill places seeds evenly and covers them with soil."],
-            ["Why is a field levelled after ploughing?", ["So water spreads evenly", "To make it slippery", "To remove all soil", "To kill earthworms"], 0, "A level field holds water evenly."],
-            ["Ploughing helps earthworms and microbes because:", ["They stay active in loose, airy soil", "It kills them", "It removes them", "They prefer hard soil"], 0, "Loose soil has air and moisture that these helpers need."],
-            ["Covering seeds with soil after sowing protects them from:", ["Birds", "Rain", "Sunlight forever", "Air"], 0, "Birds eat seeds left on the surface."]
+            ["Loosening and turning the soil is called:", ["Ploughing", "Harvesting", "Winnowing", "Weeding"], 0, "Ploughing or tilling loosens the soil.", 1],
+            ["Why do roots need loose soil?", ["To grow deep and get air", "To stay small", "To keep water out", "To stop growing"], 0, "Loose soil lets roots spread and breathe.", 2],
+            ["In the water test, healthy seeds:", ["Sink", "Float", "Dissolve", "Change colour"], 0, "Damaged seeds are hollow and float; good ones sink.", 1],
+            ["Why should seeds be sown with gaps between them?", ["So plants don't compete for light, water and nutrients", "To save soil", "To attract birds", "Gaps are not needed"], 0, "Proper spacing avoids overcrowding.", 3],
+            ["What does a seed drill do?", ["Sows seeds evenly at the right depth", "Cuts the crop", "Sprays pesticide", "Pumps water"], 0, "A seed drill places seeds evenly and covers them with soil.", 2],
+            ["Why is a field levelled after ploughing?", ["So water spreads evenly", "To make it slippery", "To remove all soil", "To kill earthworms"], 0, "A level field holds water evenly.", 2],
+            ["Ploughing helps earthworms and microbes because:", ["They stay active in loose, airy soil", "It kills them", "It removes them", "They prefer hard soil"], 0, "Loose soil has air and moisture that these helpers need.", 3],
+            ["Covering seeds with soil after sowing protects them from:", ["Birds", "Rain", "Sunlight forever", "Air"], 0, "Birds eat seeds left on the surface.", 1]
           ]
         },
         {
@@ -47,14 +47,14 @@
           "key_idea": "Crops need the right amount of water, nutrients from manure or fertiliser, and protection from weeds.",
           "body": "Plants need water and nutrients to grow, and they need to be protected from weeds.\n\nIrrigation: Supplying water to crops at regular times is irrigation. Sources include wells, tube wells, ponds, canals and rivers. Drip irrigation sends water drop by drop to the roots through pipes. Sprinklers spray water like rain. Both save a lot of water, which is very useful where water is scarce.\n\nManure and fertiliser: Crops take nutrients from the soil, so we must put them back. Manure is made from rotting cow dung and plant waste in a compost pit. It improves soil texture and helps it hold water. Fertilisers like urea are factory-made and give specific nutrients quickly, but using too much harms the soil and pollutes water.\n\nWeeds: Unwanted plants that grow with the crop are weeds. They steal water, sunlight and nutrients. Removing them is weeding. It can be done by hand with a khurpi, or with weedicides. Safety: wear a cloth over your nose and mouth and wash hands when spraying any chemical.",
           "questions": [
-            ["Supplying water to crops at regular times is called:", ["Irrigation", "Weeding", "Sowing", "Threshing"], 0, "Irrigation means watering crops regularly."],
-            ["Which method saves the most water?", ["Drip irrigation", "Flooding the field", "Leaving a tap open", "Watering at noon"], 0, "Drip irrigation sends water directly to the roots, drop by drop."],
-            ["Manure is made from:", ["Rotting cow dung and plant waste", "Plastic", "Sand only", "Factory chemicals"], 0, "Manure is natural and made from decomposed organic waste."],
-            ["Too much fertiliser can:", ["Harm the soil and pollute water", "Make soil healthier forever", "Have no effect", "Stop rain"], 0, "Overuse damages soil and pollutes water sources."],
-            ["Weeds are:", ["Unwanted plants growing with the crop", "The main crop", "Insects", "Seeds that sink"], 0, "Weeds compete with crops for water, light and nutrients."],
-            ["A khurpi is used for:", ["Removing weeds", "Pumping water", "Measuring rain", "Cutting wood"], 0, "A khurpi is a small hand tool for weeding."],
-            ["What should you do when spraying weedicide?", ["Cover nose and mouth and wash hands after", "Spray it on your face", "Spray it while eating", "Nothing special"], 0, "Chemicals can harm people, so protect yourself."],
-            ["Manure is better for soil texture than fertiliser because it:", ["Adds organic matter that holds water", "Is made of plastic", "Dries the soil", "Has no nutrients"], 0, "Organic matter improves soil and its water-holding ability."]
+            ["Supplying water to crops at regular times is called:", ["Irrigation", "Weeding", "Sowing", "Threshing"], 0, "Irrigation means watering crops regularly.", 1],
+            ["Which method saves the most water?", ["Drip irrigation", "Flooding the field", "Leaving a tap open", "Watering at noon"], 0, "Drip irrigation sends water directly to the roots, drop by drop.", 2],
+            ["Manure is made from:", ["Rotting cow dung and plant waste", "Plastic", "Sand only", "Factory chemicals"], 0, "Manure is natural and made from decomposed organic waste.", 1],
+            ["Too much fertiliser can:", ["Harm the soil and pollute water", "Make soil healthier forever", "Have no effect", "Stop rain"], 0, "Overuse damages soil and pollutes water sources.", 2],
+            ["Weeds are:", ["Unwanted plants growing with the crop", "The main crop", "Insects", "Seeds that sink"], 0, "Weeds compete with crops for water, light and nutrients.", 1],
+            ["A khurpi is used for:", ["Removing weeds", "Pumping water", "Measuring rain", "Cutting wood"], 0, "A khurpi is a small hand tool for weeding.", 2],
+            ["What should you do when spraying weedicide?", ["Cover nose and mouth and wash hands after", "Spray it on your face", "Spray it while eating", "Nothing special"], 0, "Chemicals can harm people, so protect yourself.", 3],
+            ["Manure is better for soil texture than fertiliser because it:", ["Adds organic matter that holds water", "Is made of plastic", "Dries the soil", "Has no nutrients"], 0, "Organic matter improves soil and its water-holding ability.", 3]
           ]
         }
       ]
@@ -70,14 +70,14 @@
           "key_idea": "A force is a push or a pull; it can start, stop, speed up, slow down, turn or change the shape of an object.",
           "body": "When you open a door, you push or pull it. When you draw water from a well, you pull the rope. Every push or pull is called a force.\n\nForce comes from interaction: at least two objects must act on each other. Your hand and the door, or the rope and the bucket.\n\nWhat can a force do?\n1. Make a still object move: kicking a football.\n2. Stop a moving object: catching a ball.\n3. Change speed: pushing a cycle to make it go faster.\n4. Change direction: hitting a cricket ball with a bat.\n5. Change shape: pressing dough to make a roti, or squeezing a sponge.\n\nForces have size (strength) and direction. If two people push a cart in the same direction, their forces add up and the cart moves easily. If they push from opposite sides with equal force, the cart does not move.\n\nThe strength of a force is measured in newtons (N).",
           "questions": [
-            ["A force is a:", ["Push or pull", "Type of energy drink", "Colour", "Sound"], 0, "Any push or pull on an object is a force."],
-            ["Pressing dough into a roti shows that force can:", ["Change the shape of an object", "Only stop objects", "Make sound", "Make things invisible"], 0, "Force can change the shape of objects."],
-            ["Two people push a cart from opposite sides with equal force. The cart:", ["Does not move", "Moves very fast", "Flies up", "Breaks into two"], 0, "Equal and opposite forces cancel each other."],
-            ["Hitting a cricket ball with a bat mainly changes the ball's:", ["Direction", "Colour", "Mass", "Temperature"], 0, "The bat's force sends the ball in a new direction."],
-            ["The unit of force is:", ["Newton", "Metre", "Kilogram", "Litre"], 0, "Force is measured in newtons (N)."],
-            ["Two people push a cart in the same direction. The total force is:", ["The sum of both forces", "Zero", "Less than one force", "The difference"], 0, "Forces in the same direction add up."],
-            ["Pulling a bucket from a well is an example of:", ["A pulling force", "No force", "Pressure only", "Magnetism"], 0, "Pulling the rope is a force."],
-            ["To have a force, we need at least:", ["Two objects interacting", "One object alone", "Three magnets", "Electricity"], 0, "Force arises from interaction between objects."]
+            ["A force is a:", ["Push or pull", "Type of energy drink", "Colour", "Sound"], 0, "Any push or pull on an object is a force.", 1],
+            ["Pressing dough into a roti shows that force can:", ["Change the shape of an object", "Only stop objects", "Make sound", "Make things invisible"], 0, "Force can change the shape of objects.", 2],
+            ["Two people push a cart from opposite sides with equal force. The cart:", ["Does not move", "Moves very fast", "Flies up", "Breaks into two"], 0, "Equal and opposite forces cancel each other.", 3],
+            ["Hitting a cricket ball with a bat mainly changes the ball's:", ["Direction", "Colour", "Mass", "Temperature"], 0, "The bat's force sends the ball in a new direction.", 2],
+            ["The unit of force is:", ["Newton", "Metre", "Kilogram", "Litre"], 0, "Force is measured in newtons (N).", 1],
+            ["Two people push a cart in the same direction. The total force is:", ["The sum of both forces", "Zero", "Less than one force", "The difference"], 0, "Forces in the same direction add up.", 3],
+            ["Pulling a bucket from a well is an example of:", ["A pulling force", "No force", "Pressure only", "Magnetism"], 0, "Pulling the rope is a force.", 1],
+            ["To have a force, we need at least:", ["Two objects interacting", "One object alone", "Three magnets", "Electricity"], 0, "Force arises from interaction between objects.", 2]
           ]
         },
         {
@@ -87,14 +87,14 @@
           "key_idea": "Contact forces act by touching (muscle, friction); non-contact forces act from a distance (magnetic, gravity).",
           "body": "Some forces need touching. Others work from a distance.\n\nContact forces:\n1. Muscular force: the force of our muscles, or of a bullock pulling a plough.\n2. Friction: the force that slows things down when two surfaces rub. A cycle stops rolling after some time because of friction between the tyres and the road. Friction also helps us walk without slipping. On a wet, oily floor there is less friction, so we slip.\n\nNon-contact forces:\n1. Magnetic force: a magnet pulls iron nails without touching them.\n2. Gravity: the Earth pulls everything towards it. A mango falls down, not up, because of gravity. The pull of gravity on an object is its weight.\n3. Electrostatic force: rub a plastic comb on dry hair, and it can pick up small bits of paper without touching them.\n\nSo, a falling mango, a magnet and a charged comb all show forces acting across a gap. A pushing hand, a rolling tyre and a pulling bullock show forces that need contact.",
           "questions": [
-            ["Which is a non-contact force?", ["Gravity", "Friction", "Muscular force", "A push with your hand"], 0, "Gravity acts without touching."],
-            ["Why does a rolling cycle slowly stop on its own?", ["Friction between tyres and road", "Gravity pushes it up", "Magnetism", "The wind always stops it"], 0, "Friction opposes motion and slows it down."],
-            ["A bullock pulling a plough uses:", ["Muscular force", "Magnetic force", "Electrostatic force", "No force"], 0, "Animals use their muscles to pull."],
-            ["Why do we slip on an oily floor?", ["There is less friction", "There is more gravity", "Oil is magnetic", "The floor pushes us"], 0, "Oil reduces friction between feet and floor."],
-            ["A comb rubbed on dry hair picks up bits of paper because of:", ["Electrostatic force", "Friction only", "Gravity", "Muscular force"], 0, "Rubbing charges the comb, which attracts paper."],
-            ["The pull of gravity on an object is called its:", ["Weight", "Speed", "Volume", "Colour"], 0, "Weight is the force of gravity on a body."],
-            ["A magnet pulling a nail from a distance shows:", ["Non-contact force", "Contact force", "Friction", "No force"], 0, "Magnetic force acts across a gap."],
-            ["Friction is useful because it:", ["Helps us walk without slipping", "Makes everything slip", "Removes gravity", "Is a magnet"], 0, "Without friction our feet would slide."]
+            ["Which is a non-contact force?", ["Gravity", "Friction", "Muscular force", "A push with your hand"], 0, "Gravity acts without touching.", 1],
+            ["Why does a rolling cycle slowly stop on its own?", ["Friction between tyres and road", "Gravity pushes it up", "Magnetism", "The wind always stops it"], 0, "Friction opposes motion and slows it down.", 2],
+            ["A bullock pulling a plough uses:", ["Muscular force", "Magnetic force", "Electrostatic force", "No force"], 0, "Animals use their muscles to pull.", 1],
+            ["Why do we slip on an oily floor?", ["There is less friction", "There is more gravity", "Oil is magnetic", "The floor pushes us"], 0, "Oil reduces friction between feet and floor.", 2],
+            ["A comb rubbed on dry hair picks up bits of paper because of:", ["Electrostatic force", "Friction only", "Gravity", "Muscular force"], 0, "Rubbing charges the comb, which attracts paper.", 2],
+            ["The pull of gravity on an object is called its:", ["Weight", "Speed", "Volume", "Colour"], 0, "Weight is the force of gravity on a body.", 1],
+            ["A magnet pulling a nail from a distance shows:", ["Non-contact force", "Contact force", "Friction", "No force"], 0, "Magnetic force acts across a gap.", 3],
+            ["Friction is useful because it:", ["Helps us walk without slipping", "Makes everything slip", "Removes gravity", "Is a magnet"], 0, "Without friction our feet would slide.", 3]
           ]
         },
         {
@@ -104,14 +104,14 @@
           "key_idea": "Pressure = Force ÷ Area; the same force on a smaller area gives more pressure.",
           "body": "Why is it easy to cut vegetables with a sharp knife but hard with a blunt one? The answer is pressure.\n\nPressure is the force acting on a unit area:\n\nPressure = Force ÷ Area\n\nThe same force on a smaller area gives more pressure. A sharp knife's edge is very thin, so your push is focused on a tiny area and it cuts easily. A nail has a pointed tip for the same reason.\n\nThe opposite is also useful. Spreading force over a large area gives less pressure:\n1. School bags have wide straps so they don't hurt your shoulders.\n2. Tractors have wide tyres so they don't sink into soft, wet fields.\n3. Camels have wide feet, so they walk easily on sand.\n\nLiquids and gases also press. Water presses on the walls of a tank. Water pressure increases with depth, so the bottom of a dam is built thicker. Air around us presses on us too. This is called atmospheric pressure. We don't feel it because the pressure inside our body balances it.",
           "questions": [
-            ["Pressure is equal to:", ["Force ÷ Area", "Area ÷ Force", "Force × Area", "Force + Area"], 0, "Pressure is force per unit area."],
-            ["Why does a sharp knife cut better?", ["Its thin edge gives high pressure", "It is heavier", "It is shinier", "It has more area"], 0, "Smaller area means more pressure for the same force."],
-            ["Why do tractors have wide tyres?", ["To reduce pressure so they don't sink in soft soil", "To go faster", "To look big", "To increase pressure"], 0, "A wider area spreads the weight and lowers pressure."],
-            ["Why do school bags have wide straps?", ["To spread the weight and lower pressure on shoulders", "For decoration", "To make bags heavier", "To raise pressure"], 0, "Wide straps reduce pressure on your shoulders."],
-            ["The bottom of a dam is made thicker because:", ["Water pressure increases with depth", "Water is lighter at the bottom", "Fish live there", "It looks nice"], 0, "Deeper water presses harder."],
-            ["A force of 100 N acts on 2 m². The pressure is:", ["50 N/m²", "200 N/m²", "102 N/m²", "98 N/m²"], 0, "100 ÷ 2 = 50 N/m²."],
-            ["The air around us pressing on us is called:", ["Atmospheric pressure", "Friction", "Gravity", "Weight"], 0, "The air's weight creates atmospheric pressure."],
-            ["Why is a nail pointed?", ["A small tip gives high pressure to enter wood", "To look sharp", "To reduce pressure", "To make it heavy"], 0, "A small area concentrates the force."]
+            ["Pressure is equal to:", ["Force ÷ Area", "Area ÷ Force", "Force × Area", "Force + Area"], 0, "Pressure is force per unit area.", 1],
+            ["Why does a sharp knife cut better?", ["Its thin edge gives high pressure", "It is heavier", "It is shinier", "It has more area"], 0, "Smaller area means more pressure for the same force.", 2],
+            ["Why do tractors have wide tyres?", ["To reduce pressure so they don't sink in soft soil", "To go faster", "To look big", "To increase pressure"], 0, "A wider area spreads the weight and lowers pressure.", 3],
+            ["Why do school bags have wide straps?", ["To spread the weight and lower pressure on shoulders", "For decoration", "To make bags heavier", "To raise pressure"], 0, "Wide straps reduce pressure on your shoulders.", 3],
+            ["The bottom of a dam is made thicker because:", ["Water pressure increases with depth", "Water is lighter at the bottom", "Fish live there", "It looks nice"], 0, "Deeper water presses harder.", 2],
+            ["A force of 100 N acts on 2 m². The pressure is:", ["50 N/m²", "200 N/m²", "102 N/m²", "98 N/m²"], 0, "100 ÷ 2 = 50 N/m².", 3],
+            ["The air around us pressing on us is called:", ["Atmospheric pressure", "Friction", "Gravity", "Weight"], 0, "The air's weight creates atmospheric pressure.", 1],
+            ["Why is a nail pointed?", ["A small tip gives high pressure to enter wood", "To look sharp", "To reduce pressure", "To make it heavy"], 0, "A small area concentrates the force.", 2]
           ]
         }
       ]

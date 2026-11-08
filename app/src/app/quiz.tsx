@@ -10,6 +10,8 @@ import { ScreenHeader } from '../components/ScreenHeader';
 import { Animated, PressableScale, rise, settle, STAGGER } from '../components/motion';
 import { Button, ErrorBox, Icon, Loading, ProgressBar, SpeakButton } from '../components/ui';
 import { BattleResult } from '../components/BattleResult';
+import { BossBar, BossIntro, HurtFlash } from '../components/BossFight';
+import { bossFor } from '../lib/bosses';
 import { api, friendlyError } from '../lib/api';
 import { useApp } from '../lib/AppState';
 import type { QuizResult } from '../lib/types';
@@ -32,6 +34,12 @@ export default function QuizScreen() {
   const [error, setError] = useState<string | null>(null);
   const [explain, setExplain] = useState<{ loading: boolean; text?: string; example?: string; error?: string } | null>(null);
   const autoNext = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Boss fight (chapter tests)
+  const isBoss = kind === 'chapter';
+  const boss = bossFor(refId ?? '');
+  const [fighting, setFighting] = useState(false);
+  const [hits, setHits] = useState(0);
+  const [hurts, setHurts] = useState(0);
 
   const load = useCallback(async () => {
     setError(null);
@@ -40,6 +48,9 @@ export default function QuizScreen() {
     setPicks({});
     setResult(null);
     setExplain(null);
+    setFighting(false);
+    setHits(0);
+    setHurts(0);
     try {
       setQuiz(await api<QuizData>(`/api/quiz?kind=${kind}&refId=${refId}`));
     } catch (e) {
@@ -103,6 +114,8 @@ export default function QuizScreen() {
       if (!opt) return;
       const right = opt.key === q.answerKey;
       setPicks((p) => ({ ...p, [q.id]: opt.key }));
+      if (right) setHits((h) => h + 1);
+      else setHurts((h) => h + 1);
       Haptics.notificationAsync(right ? Haptics.NotificationFeedbackType.Success : Haptics.NotificationFeedbackType.Error).catch(() => {});
       if (byVoice) speak(right ? S.correct : S.notQuite);
     },
@@ -129,12 +142,18 @@ export default function QuizScreen() {
           ...wrong.flatMap((w) => [w.q, `${S.rightAnswer}: ${w.options[w.correctKey]}`, w.explanation]),
         ];
       }
+      if (isBoss && !fighting) return [boss.name, S.bossAppears, boss.taunt, S.bossIntro];
       if (!q) return [];
       return [q.q, ...q.options.map((o, i) => `${LETTERS[i]}: ${o.text}`), S.sayAnswer];
     },
+    onStartQuiz: isBoss && !fighting ? () => setFighting(true) : undefined,
     onAnswer: result
       ? undefined
       : (o) => {
+          if (isBoss && !fighting) {
+            setFighting(true); // any spoken answer on the intro starts the fight
+            return;
+          }
           voicePicked.current = true;
           pick(LETTERS.indexOf(o), true);
         },
@@ -169,7 +188,7 @@ export default function QuizScreen() {
     else router.replace('/');
   };
 
-  const title = kind === 'chapter' ? S.chapterTest : S.checkUnderstanding;
+  const title = isBoss ? boss.name : S.checkUnderstanding;
 
   if (error) return <View style={{ flex: 1 }}><ScreenHeader title={title} back /><ErrorBox message={error} onRetry={result ? undefined : load} /></View>;
   if (!quiz || submitting) return <View style={{ flex: 1 }}><ScreenHeader title={title} back /><Loading /></View>;
@@ -181,7 +200,7 @@ export default function QuizScreen() {
       <View style={{ flex: 1 }}>
         <ScreenHeader title={title} back />
         <ScrollView contentContainerStyle={{ padding: 16, gap: 16, paddingBottom: 140 }}>
-          <BattleResult result={result} onDone={() => setBattleDone(true)} />
+          <BattleResult result={result} boss={isBoss ? boss : undefined} onDone={() => setBattleDone(true)} />
 
           {battleDone ? (
           <>
@@ -246,9 +265,37 @@ export default function QuizScreen() {
   // ---------------------------------------------------------------- question
   if (!q) return <Loading />;
   const right = picked !== undefined && picked === q.answerKey;
+
+  if (isBoss && !fighting) {
+    return (
+      <View style={{ flex: 1 }}>
+        <ScreenHeader title={S.chapterTest} back />
+        <BossIntro
+          boss={boss}
+          onFight={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy).catch(() => {});
+            setFighting(true);
+          }}
+        />
+      </View>
+    );
+  }
+
+  const needed = Math.ceil((quiz.passPct * total) / 100 - 1e-9);
   return (
     <View style={{ flex: 1 }}>
       <ScreenHeader title={title} back />
+      {isBoss ? (
+        <BossBar
+          boss={boss}
+          hp={needed - hits}
+          maxHp={needed}
+          hearts={Math.max(0, total - needed - hurts)}
+          maxHearts={total - needed}
+          hits={hits}
+          hurts={hurts}
+        />
+      ) : null}
       <View style={{ paddingHorizontal: 16, gap: 6 }}>
         <ProgressBar value={(idx + (picked !== undefined ? 1 : 0)) / total} color={C.green} height={16} />
         <Text style={{ color: C.muted, fontSize: 16, fontWeight: '700', textAlign: 'right' }}>
@@ -297,6 +344,7 @@ export default function QuizScreen() {
           </Animated.View>
         )}
       </ScrollView>
+      {isBoss ? <HurtFlash hurts={hurts} /> : null}
     </View>
   );
 }

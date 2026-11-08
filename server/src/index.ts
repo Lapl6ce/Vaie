@@ -129,6 +129,14 @@ app.post('/api/quiz/submit', (req, res) => {
   res.json(game.submitQuiz(pidOf(req), b.kind === 'chapter' ? 'chapter' : 'unit', str(b.refId), answers));
 });
 
+// Snakes & Ladders chapter test: the full question pool (with difficulty) and saved game results.
+app.get('/api/game', (req, res) => res.json(game.drawGame(pidOf(req), str(req.query.chapterId))));
+app.post('/api/game/result', (req, res) => {
+  const b = req.body ?? {};
+  const players = Array.isArray(b.players) ? b.players : [];
+  res.json(game.saveGameResult(pidOf(req), str(b.chapterId), str(b.mode), players, b.winner ? str(b.winner) : null));
+});
+
 app.get('/api/summary', (req, res) => res.json(game.summary(pidOf(req))));
 app.get('/api/stats', (req, res) => res.json(game.stats(pidOf(req))));
 app.get('/api/leaderboard', (req, res) => {

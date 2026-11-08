@@ -13,14 +13,14 @@
           "key_idea": "Natural numbers start at 1, whole numbers add 0, and integers also include negative numbers.",
           "body": "When you count goats in a herd, you say 1, 2, 3, 4... These counting numbers are called natural numbers.\n\nIf there are no goats in the shed, the count is 0. When we add 0 to the natural numbers we get whole numbers: 0, 1, 2, 3...\n\nNow think about money. If you have ₹50 and you borrow ₹80 from a shopkeeper, after paying everything you are ₹30 short. We write this as −30. Numbers like −1, −2, −3 are negative numbers.\n\nIntegers are all whole numbers together with their negatives: ... −3, −2, −1, 0, 1, 2, 3 ...\n\nWe can show them on a number line. Draw a line, mark 0 in the middle. Positive numbers go to the right, negative numbers to the left. A number further right is always bigger. So −2 is bigger than −5, just as being ₹2 short is better than being ₹5 short.\n\nSo: every natural number is a whole number, and every whole number is an integer.",
           "questions": [
-            ["Which is the smallest natural number?", ["1", "0", "−1", "2"], 0, "Natural numbers are counting numbers and begin at 1."],
-            ["Whole numbers are natural numbers together with:", ["0", "Negative numbers", "Fractions", "Decimals"], 0, "Adding 0 to natural numbers gives whole numbers."],
-            ["Which of these is an integer but NOT a whole number?", ["−4", "0", "7", "12"], 0, "−4 is negative, so it is an integer but not a whole number."],
-            ["Which is bigger: −2 or −5?", ["−2", "−5", "They are equal", "Cannot say"], 0, "−2 is to the right of −5 on the number line, so it is bigger."],
-            ["You have ₹50 and owe ₹80. Your money position is:", ["−30", "30", "130", "−130"], 0, "50 − 80 = −30, meaning you are ₹30 short."],
-            ["On a number line, negative numbers are on the:", ["Left of 0", "Right of 0", "Exactly at 0", "Above 0"], 0, "Negative numbers go to the left of zero."],
-            ["Is every natural number a whole number?", ["Yes", "No", "Only even ones", "Only odd ones"], 0, "Whole numbers include all natural numbers plus zero."],
-            ["Which of these is NOT an integer?", ["2.5", "−3", "0", "8"], 0, "Integers have no fractional part; 2.5 is not an integer."]
+            ["Which is the smallest natural number?", ["1", "0", "−1", "2"], 0, "Natural numbers are counting numbers and begin at 1.", 1],
+            ["Whole numbers are natural numbers together with:", ["0", "Negative numbers", "Fractions", "Decimals"], 0, "Adding 0 to natural numbers gives whole numbers.", 1],
+            ["Which of these is an integer but NOT a whole number?", ["−4", "0", "7", "12"], 0, "−4 is negative, so it is an integer but not a whole number.", 2],
+            ["Which is bigger: −2 or −5?", ["−2", "−5", "They are equal", "Cannot say"], 0, "−2 is to the right of −5 on the number line, so it is bigger.", 2],
+            ["You have ₹50 and owe ₹80. Your money position is:", ["−30", "30", "130", "−130"], 0, "50 − 80 = −30, meaning you are ₹30 short.", 3],
+            ["On a number line, negative numbers are on the:", ["Left of 0", "Right of 0", "Exactly at 0", "Above 0"], 0, "Negative numbers go to the left of zero.", 1],
+            ["Is every natural number a whole number?", ["Yes", "No", "Only even ones", "Only odd ones"], 0, "Whole numbers include all natural numbers plus zero.", 2],
+            ["Which of these is NOT an integer?", ["2.5", "−3", "0", "8"], 0, "Integers have no fractional part; 2.5 is not an integer.", 3]
           ]
         },
         {
@@ -30,14 +30,14 @@
           "key_idea": "A rational number can be written as p/q, where p and q are integers and q is not zero.",
           "body": "If you cut a roti into 4 equal parts and eat 1, you ate 1/4 of the roti. Numbers like 1/4, 3/2 and −5/7 are fractions.\n\nA rational number is any number that can be written as p/q, where p and q are integers and q is not 0.\n\nExamples:\n1. 3/4 is rational.\n2. 5 is rational, because 5 = 5/1.\n3. −2 is rational, because −2 = −2/1.\n4. 0 is rational, because 0 = 0/1.\n5. 0.5 is rational, because 0.5 = 1/2.\n\nSo every integer is also a rational number.\n\nWhy can q not be 0? Because dividing by zero has no meaning. You cannot share 6 mangoes among 0 people.\n\nThere are infinitely many rational numbers between any two numbers. Between 1 and 2 you can find 3/2, then between 1 and 3/2 you can find 5/4, and so on, forever. A simple trick: the average of two numbers always lies between them.\n\nWhen you write a rational number as a decimal, it either stops (1/4 = 0.25) or repeats a pattern (1/3 = 0.333...).",
           "questions": [
-            ["A rational number can be written in the form:", ["p/q with q not equal to 0", "p × q", "p + q", "p/q with q = 0"], 0, "Rational numbers are ratios of integers with a non-zero denominator."],
-            ["Is 5 a rational number?", ["Yes, because 5 = 5/1", "No, it is a whole number only", "No, it has no denominator", "Only on Sundays"], 0, "Every integer n can be written as n/1."],
-            ["Why can q not be 0 in p/q?", ["Division by zero has no meaning", "Zero is too small", "Zero is negative", "Zero is not a number"], 0, "We cannot divide anything into zero parts."],
-            ["Which is a rational number between 1 and 2?", ["3/2", "5/2", "1/2", "−1"], 0, "3/2 = 1.5, which lies between 1 and 2."],
-            ["0.5 written as p/q is:", ["1/2", "5/1", "1/5", "2/1"], 0, "0.5 = 5/10 = 1/2."],
-            ["How many rational numbers are there between 1 and 2?", ["Infinitely many", "None", "Exactly one", "Exactly ten"], 0, "We can always find another rational number between any two."],
-            ["The decimal form of 1/3 is:", ["0.333... (repeating)", "0.3 exactly", "3.0", "0.13"], 0, "1/3 gives a repeating decimal 0.333..."],
-            ["Which of these is rational?", ["−2/7", "√2", "π", "None of these"], 0, "−2/7 is a ratio of integers, so it is rational."]
+            ["A rational number can be written in the form:", ["p/q with q not equal to 0", "p × q", "p + q", "p/q with q = 0"], 0, "Rational numbers are ratios of integers with a non-zero denominator.", 1],
+            ["Is 5 a rational number?", ["Yes, because 5 = 5/1", "No, it is a whole number only", "No, it has no denominator", "Only on Sundays"], 0, "Every integer n can be written as n/1.", 2],
+            ["Why can q not be 0 in p/q?", ["Division by zero has no meaning", "Zero is too small", "Zero is negative", "Zero is not a number"], 0, "We cannot divide anything into zero parts.", 2],
+            ["Which is a rational number between 1 and 2?", ["3/2", "5/2", "1/2", "−1"], 0, "3/2 = 1.5, which lies between 1 and 2.", 2],
+            ["0.5 written as p/q is:", ["1/2", "5/1", "1/5", "2/1"], 0, "0.5 = 5/10 = 1/2.", 1],
+            ["How many rational numbers are there between 1 and 2?", ["Infinitely many", "None", "Exactly one", "Exactly ten"], 0, "We can always find another rational number between any two.", 1],
+            ["The decimal form of 1/3 is:", ["0.333... (repeating)", "0.3 exactly", "3.0", "0.13"], 0, "1/3 gives a repeating decimal 0.333...", 3],
+            ["Which of these is rational?", ["−2/7", "√2", "π", "None of these"], 0, "−2/7 is a ratio of integers, so it is rational.", 3]
           ]
         },
         {
@@ -47,14 +47,14 @@
           "key_idea": "Irrational numbers cannot be written as p/q; their decimals never stop and never repeat. Rational and irrational together make real numbers.",
           "body": "Some numbers cannot be written as p/q at all. These are called irrational numbers.\n\nA famous one is √2. Draw a square field that is 1 metre on each side. The diagonal from one corner to the opposite corner is √2 metres long. Its decimal is 1.41421356... It never ends and never repeats.\n\nAnother famous irrational number is π (pi). It is the ratio of the distance around a circle to its width. If you measure the rope around a round well and divide by the well's width, you get about 3.14. In fact π = 3.14159... and it goes on forever without a pattern. We often use 22/7 as an approximate value, but π is not exactly 22/7.\n\nHow to tell them apart:\n1. Decimal stops or repeats → rational.\n2. Decimal goes on forever without repeating → irrational.\n\nAll rational and irrational numbers together are called real numbers. Every real number has exactly one point on the number line, and every point on the line is a real number.",
           "questions": [
-            ["Which is an irrational number?", ["√2", "1/2", "0.25", "7"], 0, "√2 has a never-ending, non-repeating decimal."],
-            ["The decimal of an irrational number:", ["Never stops and never repeats", "Always stops", "Always repeats", "Has only one digit"], 0, "That is exactly what makes a number irrational."],
-            ["The diagonal of a square with side 1 m is:", ["√2 m", "2 m", "1 m", "1/2 m"], 0, "By Pythagoras, diagonal² = 1² + 1² = 2, so diagonal = √2."],
-            ["Is π exactly equal to 22/7?", ["No, 22/7 is only an approximate value", "Yes, always", "Yes, but only for wells", "π is 3 exactly"], 0, "π is irrational; 22/7 is a handy approximation."],
-            ["Rational and irrational numbers together are called:", ["Real numbers", "Natural numbers", "Whole numbers", "Integers"], 0, "Real numbers include both."],
-            ["0.121212... (repeating) is:", ["Rational", "Irrational", "Not a number", "An integer"], 0, "A repeating decimal is rational."],
-            ["Which is rational?", ["√9", "√2", "√3", "π"], 0, "√9 = 3, which is rational."],
-            ["Every point on the number line represents:", ["A unique real number", "Only an integer", "Only a fraction", "Nothing"], 0, "The real numbers fill the whole number line."]
+            ["Which is an irrational number?", ["√2", "1/2", "0.25", "7"], 0, "√2 has a never-ending, non-repeating decimal.", 1],
+            ["The decimal of an irrational number:", ["Never stops and never repeats", "Always stops", "Always repeats", "Has only one digit"], 0, "That is exactly what makes a number irrational.", 1],
+            ["The diagonal of a square with side 1 m is:", ["√2 m", "2 m", "1 m", "1/2 m"], 0, "By Pythagoras, diagonal² = 1² + 1² = 2, so diagonal = √2.", 3],
+            ["Is π exactly equal to 22/7?", ["No, 22/7 is only an approximate value", "Yes, always", "Yes, but only for wells", "π is 3 exactly"], 0, "π is irrational; 22/7 is a handy approximation.", 2],
+            ["Rational and irrational numbers together are called:", ["Real numbers", "Natural numbers", "Whole numbers", "Integers"], 0, "Real numbers include both.", 1],
+            ["0.121212... (repeating) is:", ["Rational", "Irrational", "Not a number", "An integer"], 0, "A repeating decimal is rational.", 2],
+            ["Which is rational?", ["√9", "√2", "√3", "π"], 0, "√9 = 3, which is rational.", 3],
+            ["Every point on the number line represents:", ["A unique real number", "Only an integer", "Only a fraction", "Nothing"], 0, "The real numbers fill the whole number line.", 2]
           ]
         }
       ]
@@ -70,14 +70,14 @@
           "key_idea": "An equation like ax + by + c = 0 has two unknowns, x and y, and many possible solutions.",
           "body": "At the weekly haat, a pen costs ₹x and a notebook costs ₹y. Meena pays ₹40 for 2 pens and 1 notebook. We can write:\n\n2x + y = 40\n\nThis is a linear equation in two variables. Any equation that can be written as ax + by + c = 0, where a and b are not both zero, is of this type. Here a = 2, b = 1 and c = −40.\n\nA solution is a pair of values (x, y) that makes the equation true. Let's try:\n1. If a pen costs ₹10, then 2(10) + y = 40, so y = 20. The pair (10, 20) works.\n2. If a pen costs ₹15, then y = 10. The pair (15, 10) also works.\n3. If a pen costs ₹5, then y = 30. The pair (5, 30) works too.\n\nSo a linear equation in two variables has many solutions, in fact infinitely many. To find one, pick any value for x and calculate y.\n\nTo check a solution, put the values into the equation and see if both sides are equal.",
           "questions": [
-            ["Which is a linear equation in two variables?", ["2x + y = 40", "x² = 4", "x = 5", "xy = 6"], 0, "It has two variables, each to the power 1."],
-            ["Is (10, 20) a solution of 2x + y = 40?", ["Yes", "No", "Only if x = 0", "Cannot be checked"], 0, "2(10) + 20 = 40, so it is true."],
-            ["How many solutions does 2x + y = 40 have?", ["Infinitely many", "Exactly one", "Exactly two", "None"], 0, "Each value of x gives a matching y, so there are endless solutions."],
-            ["In 2x + y = 40, if x = 15, then y is:", ["10", "25", "15", "20"], 0, "2(15) + y = 40 → y = 40 − 30 = 10."],
-            ["Write 3x + 2y = 12 in the form ax + by + c = 0. What is c?", ["−12", "12", "3", "2"], 0, "3x + 2y − 12 = 0, so c = −12."],
-            ["Is (2, 3) a solution of x + y = 6?", ["No", "Yes", "Only sometimes", "Both"], 0, "2 + 3 = 5, not 6."],
-            ["To find a solution of x + 2y = 10, if y = 2 then x is:", ["6", "8", "4", "2"], 0, "x + 4 = 10 → x = 6."],
-            ["In ax + by + c = 0, which must be true?", ["a and b are not both zero", "c must be zero", "a must equal b", "x must be zero"], 0, "If a and b were both zero, x and y would disappear."]
+            ["Which is a linear equation in two variables?", ["2x + y = 40", "x² = 4", "x = 5", "xy = 6"], 0, "It has two variables, each to the power 1.", 1],
+            ["Is (10, 20) a solution of 2x + y = 40?", ["Yes", "No", "Only if x = 0", "Cannot be checked"], 0, "2(10) + 20 = 40, so it is true.", 2],
+            ["How many solutions does 2x + y = 40 have?", ["Infinitely many", "Exactly one", "Exactly two", "None"], 0, "Each value of x gives a matching y, so there are endless solutions.", 1],
+            ["In 2x + y = 40, if x = 15, then y is:", ["10", "25", "15", "20"], 0, "2(15) + y = 40 → y = 40 − 30 = 10.", 2],
+            ["Write 3x + 2y = 12 in the form ax + by + c = 0. What is c?", ["−12", "12", "3", "2"], 0, "3x + 2y − 12 = 0, so c = −12.", 3],
+            ["Is (2, 3) a solution of x + y = 6?", ["No", "Yes", "Only sometimes", "Both"], 0, "2 + 3 = 5, not 6.", 1],
+            ["To find a solution of x + 2y = 10, if y = 2 then x is:", ["6", "8", "4", "2"], 0, "x + 4 = 10 → x = 6.", 2],
+            ["In ax + by + c = 0, which must be true?", ["a and b are not both zero", "c must be zero", "a must equal b", "x must be zero"], 0, "If a and b were both zero, x and y would disappear.", 3]
           ]
         },
         {
@@ -87,14 +87,14 @@
           "key_idea": "The graph of a linear equation in two variables is a straight line, and every point on it is a solution.",
           "body": "We can draw a picture of an equation on graph paper. Take x + y = 5.\n\nStep 1: Make a small table of solutions.\n• x = 0 → y = 5, point (0, 5)\n• x = 2 → y = 3, point (2, 3)\n• x = 5 → y = 0, point (5, 0)\n\nStep 2: Draw the x-axis (across) and the y-axis (up). Mark each point. For (2, 3), go 2 steps right and 3 steps up.\n\nStep 3: Join the points with a ruler. They lie on one straight line!\n\nThe graph of every linear equation in two variables is a straight line. That is why it is called \"linear\".\n\nEvery point on the line is a solution, and every solution is a point on the line. For example, (1, 4) is on the line and 1 + 4 = 5. The point (3, 3) is not on the line, and 3 + 3 = 6, not 5.\n\nTwo points are enough to draw a line, but we plot three to check we made no mistake. If the three points are not in a line, recheck your table.",
           "questions": [
-            ["The graph of a linear equation in two variables is:", ["A straight line", "A circle", "A curve like a U", "A single point"], 0, "That is why such equations are called linear."],
-            ["Which point lies on the line x + y = 5?", ["(2, 3)", "(3, 3)", "(1, 1)", "(5, 5)"], 0, "2 + 3 = 5."],
-            ["To plot (2, 3), you move:", ["2 right and 3 up", "3 right and 2 up", "2 up and 3 left", "2 left and 3 down"], 0, "The first number is x (across), the second is y (up)."],
-            ["What is the minimum number of points needed to draw a straight line?", ["2", "1", "3", "4"], 0, "Two points fix a straight line; a third point helps check."],
-            ["For x + y = 5, if x = 0 then the point is:", ["(0, 5)", "(5, 0)", "(0, 0)", "(1, 4)"], 0, "y = 5 − 0 = 5."],
-            ["Every point on the graph of an equation is:", ["A solution of the equation", "Not related to the equation", "Always (0, 0)", "A wrong answer"], 0, "Points on the line satisfy the equation."],
-            ["Is (3, 3) on the line x + y = 5?", ["No", "Yes", "Only when drawn in pencil", "Sometimes"], 0, "3 + 3 = 6, not 5."],
-            ["Why do we plot a third point?", ["To check for mistakes", "Because two is not allowed", "To make a curve", "To change the equation"], 0, "If all three points line up, our work is likely correct."]
+            ["The graph of a linear equation in two variables is:", ["A straight line", "A circle", "A curve like a U", "A single point"], 0, "That is why such equations are called linear.", 1],
+            ["Which point lies on the line x + y = 5?", ["(2, 3)", "(3, 3)", "(1, 1)", "(5, 5)"], 0, "2 + 3 = 5.", 3],
+            ["To plot (2, 3), you move:", ["2 right and 3 up", "3 right and 2 up", "2 up and 3 left", "2 left and 3 down"], 0, "The first number is x (across), the second is y (up).", 1],
+            ["What is the minimum number of points needed to draw a straight line?", ["2", "1", "3", "4"], 0, "Two points fix a straight line; a third point helps check.", 1],
+            ["For x + y = 5, if x = 0 then the point is:", ["(0, 5)", "(5, 0)", "(0, 0)", "(1, 4)"], 0, "y = 5 − 0 = 5.", 2],
+            ["Every point on the graph of an equation is:", ["A solution of the equation", "Not related to the equation", "Always (0, 0)", "A wrong answer"], 0, "Points on the line satisfy the equation.", 2],
+            ["Is (3, 3) on the line x + y = 5?", ["No", "Yes", "Only when drawn in pencil", "Sometimes"], 0, "3 + 3 = 6, not 5.", 2],
+            ["Why do we plot a third point?", ["To check for mistakes", "Because two is not allowed", "To make a curve", "To change the equation"], 0, "If all three points line up, our work is likely correct.", 3]
           ]
         },
         {
@@ -104,14 +104,14 @@
           "key_idea": "Turn a word problem into an equation by naming the unknowns as x and y, then writing the rule as ax + by = c.",
           "body": "Many daily situations can be written as linear equations.\n\nExample 1: A farmer has hens and goats. Together they have 20 legs. A hen has 2 legs and a goat has 4. If x is the number of hens and y the number of goats:\n2x + 4y = 20\nSolutions include (2, 4), (4, 3), (6, 2), (10, 0).\n\nExample 2: Auto fare in a town is ₹10 for the first km and ₹8 for every km after that. If total distance is x km and fare is ₹y:\ny = 10 + 8(x − 1), which simplifies to y = 8x + 2.\n\nExample 3: Two friends together saved ₹100. If Asha saved x and Bunty saved y:\nx + y = 100.\n\nSteps for any word problem:\n1. Decide what x and y stand for. Write it down.\n2. Find the rule that connects them.\n3. Write the equation.\n4. Check it with one easy example.\n\nIn real life, values like the number of goats must be whole numbers, so we only accept sensible solutions.",
           "questions": [
-            ["Hens (x) and goats (y) have 20 legs in all. The equation is:", ["2x + 4y = 20", "4x + 2y = 20", "x + y = 20", "2x + 2y = 20"], 0, "Hens have 2 legs, goats 4, so 2x + 4y = 20."],
-            ["Which is a sensible solution of 2x + 4y = 20?", ["(4, 3)", "(3, 4)", "(1, 1)", "(2.5, 2)"], 0, "2(4) + 4(3) = 8 + 12 = 20, and both are whole numbers."],
-            ["Two friends together saved ₹100. The equation is:", ["x + y = 100", "x − y = 100", "xy = 100", "x = 100y"], 0, "Their savings add up to 100."],
-            ["Auto fare: ₹10 for the first km and ₹8 for each further km. Fare for 3 km is:", ["₹26", "₹24", "₹34", "₹18"], 0, "10 + 8 × 2 = 26."],
-            ["The first step in a word problem is to:", ["Decide what x and y stand for", "Draw a circle", "Guess the answer", "Multiply everything"], 0, "Naming the unknowns clearly comes first."],
-            ["Why can't (2.5, 3.75) be a real answer for hens and goats?", ["Animals must be counted in whole numbers", "The equation is wrong", "It gives too many legs", "Goats have 3 legs"], 0, "You cannot have half a hen, so only whole-number solutions make sense."],
-            ["A pen costs ₹x and a pencil ₹y. 3 pens and 2 pencils cost ₹50. Equation:", ["3x + 2y = 50", "2x + 3y = 50", "x + y = 50", "3x − 2y = 50"], 0, "3 pens cost 3x and 2 pencils cost 2y."],
-            ["y = 8x + 2 written as ax + by + c = 0 is:", ["8x − y + 2 = 0", "8x + y + 2 = 0", "x − 8y = 2", "y − 2 = 0"], 0, "Move y to the right side: 8x − y + 2 = 0."]
+            ["Hens (x) and goats (y) have 20 legs in all. The equation is:", ["2x + 4y = 20", "4x + 2y = 20", "x + y = 20", "2x + 2y = 20"], 0, "Hens have 2 legs, goats 4, so 2x + 4y = 20.", 2],
+            ["Which is a sensible solution of 2x + 4y = 20?", ["(4, 3)", "(3, 4)", "(1, 1)", "(2.5, 2)"], 0, "2(4) + 4(3) = 8 + 12 = 20, and both are whole numbers.", 3],
+            ["Two friends together saved ₹100. The equation is:", ["x + y = 100", "x − y = 100", "xy = 100", "x = 100y"], 0, "Their savings add up to 100.", 1],
+            ["Auto fare: ₹10 for the first km and ₹8 for each further km. Fare for 3 km is:", ["₹26", "₹24", "₹34", "₹18"], 0, "10 + 8 × 2 = 26.", 3],
+            ["The first step in a word problem is to:", ["Decide what x and y stand for", "Draw a circle", "Guess the answer", "Multiply everything"], 0, "Naming the unknowns clearly comes first.", 1],
+            ["Why can't (2.5, 3.75) be a real answer for hens and goats?", ["Animals must be counted in whole numbers", "The equation is wrong", "It gives too many legs", "Goats have 3 legs"], 0, "You cannot have half a hen, so only whole-number solutions make sense.", 2],
+            ["A pen costs ₹x and a pencil ₹y. 3 pens and 2 pencils cost ₹50. Equation:", ["3x + 2y = 50", "2x + 3y = 50", "x + y = 50", "3x − 2y = 50"], 0, "3 pens cost 3x and 2 pencils cost 2y.", 1],
+            ["y = 8x + 2 written as ax + by + c = 0 is:", ["8x − y + 2 = 0", "8x + y + 2 = 0", "x − 8y = 2", "y − 2 = 0"], 0, "Move y to the right side: 8x − y + 2 = 0.", 2]
           ]
         }
       ]
